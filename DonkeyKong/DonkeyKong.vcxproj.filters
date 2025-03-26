@@ -84,9 +84,6 @@
     <ClCompile Include="UIManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Broadcaster.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="UIButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -180,9 +177,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IEventListener.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Broadcaster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UIButton.h">

@@ -140,7 +140,6 @@
     <ClCompile Include="APoolable.cpp" />
     <ClCompile Include="ApplicationManager.cpp" />
     <ClCompile Include="AScene.cpp" />
-    <ClCompile Include="Broadcaster.cpp" />
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="EmptyGameObject.cpp" />
     <ClCompile Include="FontManager.cpp" />
@@ -172,7 +171,6 @@
     <ClInclude Include="APoolable.h" />
     <ClInclude Include="ApplicationManager.h" />
     <ClInclude Include="AScene.h" />
-    <ClInclude Include="Broadcaster.h" />
     <ClInclude Include="ButtonListener.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="CollisionListener.h" />

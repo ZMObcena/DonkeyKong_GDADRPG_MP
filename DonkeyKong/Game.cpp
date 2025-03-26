@@ -27,20 +27,20 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"
 
 void Game::run()
 {
-	sf::Clock clock;
+	sf::Clock clock = sf::Clock();
 	sf::Time timeSinceLastUpdate = sf::Time::Zero;
+	sf::Time tTimePerFrame = sf::seconds(1.0f / 60);
 
 	while (mWindow.isOpen())
 	{
-		processEvents();
+		this->processEvents();
 		timeSinceLastUpdate += clock.restart();
-		while (timeSinceLastUpdate > TimePerFrame)
+		while (timeSinceLastUpdate > tTimePerFrame)
 		{
 			timeSinceLastUpdate -= TimePerFrame;
-			processEvents();
-			update(TimePerFrame);	
+			this->update(TimePerFrame);
 		}
-		render();
+		this->render();
 		//SceneManager::getInstance()->checkLoadScene();
 	}
 }

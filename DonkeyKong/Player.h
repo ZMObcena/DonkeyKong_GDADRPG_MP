@@ -13,7 +13,6 @@ public:
 	~Player();
 	void initialize();
 
-	sf::Transformable* getTransformable();
 	float getSpeed();
 
 private:

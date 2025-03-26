@@ -1,16 +1,2 @@
-﻿  TextureManager.cpp
-  UIButton.cpp
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:         with
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:         [
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:             T=unsigned int
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:         ]
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:         with
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:         [
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:             T=unsigned int
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:         ]
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(53,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Generating Code...
-  LINK : C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\x64\Debug\DonkeyKong.exe not found or not built by the last incremental link; performing full link
+﻿  PlayerMovement.cpp
   DonkeyKong.vcxproj -> C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\x64\Debug\DonkeyKong.exe

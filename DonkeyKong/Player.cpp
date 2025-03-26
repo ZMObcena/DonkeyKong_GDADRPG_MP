@@ -14,21 +14,26 @@ void Player::initialize()
 {
 	this->transformable.setPosition(640 / 2, 480 / 2);
 
-	//PlayerInputController* input = new PlayerInputController(this->name + " Input");
-	//this->attachComponent(input);
+	this->sprite = new sf::Sprite();
+	this->sprite->setTexture(*TextureManager::getInstance()->getTexture("Mario"));
+	sf::Vector2u textureSize = sprite->getTexture()->getSize();
+	sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
+	sprite->setTextureRect(TextureManager::getInstance()->getSpriteRect("Mario", 7));
+	sprite->setScale(3.0f, 3.0f);
+	sprite->setPosition(200, 200);
 
-	//PlayerMovement* movement = new PlayerMovement(this->name + " Controls");
-	//this->attachComponent(movement);
+	PlayerInputController* input = new PlayerInputController(this->name + " Input");
+	this->attachComponent(input);
 
-	Renderer* renderer = Renderer::CreateSprite("PlayerSprite", "Mario");
+	PlayerMovement* movement = new PlayerMovement(this->name + " Controls");
+	this->attachComponent(movement);
+
+	Renderer* renderer = new Renderer(this->name + " Renderer");
+	renderer->assignDrawable(sprite);
 	this->attachComponent(renderer);
 
-
-}
-
-sf::Transformable* Player::getTransformable()
-{
-	return &this->transformable;
+	//Renderer* renderer = Renderer::CreateSprite("Player", "Mario");
+	//this->attachComponent(renderer);
 }
 
 float Player::getSpeed()
