@@ -1,0 +1,92 @@
+{"frames": {
+
+"Climbing1.png":
+{
+	"frame": {"x":0,"y":25,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+"Climbing2.png":
+{
+	"frame": {"x":16,"y":25,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+"Hammer1.png":
+{
+	"frame": {"x":0,"y":0,"w":12,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":12,"h":25},
+	"sourceSize": {"w":12,"h":25}
+},
+"Hammer2.png":
+{
+	"frame": {"x":0,"y":73,"w":30,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":30,"h":16},
+	"sourceSize": {"w":30,"h":16}
+},
+"Hammer4.png":
+{
+	"frame": {"x":0,"y":89,"w":31,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":31,"h":16},
+	"sourceSize": {"w":31,"h":16}
+},
+"Hammer5.png":
+{
+	"frame": {"x":12,"y":0,"w":15,"h":25},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":15,"h":25},
+	"sourceSize": {"w":15,"h":25}
+},
+"Hammer6.png":
+{
+	"frame": {"x":0,"y":105,"w":32,"h":14},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":32,"h":14},
+	"sourceSize": {"w":32,"h":14}
+},
+"Walk0.png":
+{
+	"frame": {"x":0,"y":41,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+"Walk1.png":
+{
+	"frame": {"x":16,"y":41,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+},
+"Walk2.png":
+{
+	"frame": {"x":0,"y":57,"w":16,"h":16},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":16},
+	"sourceSize": {"w":16,"h":16}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Mario_Atlas.png",
+	"format": "RGBA8888",
+	"size": {"w":32,"h":119},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:671bdef0e628efef022b7242d985e193:37cccef162c5559dffd1f1aad28201a1:947919e026060082b0c93595aba8a198$"
+}
+}
