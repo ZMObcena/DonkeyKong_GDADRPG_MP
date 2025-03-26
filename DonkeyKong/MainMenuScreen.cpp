@@ -1,10 +1,10 @@
 #include "MainMenuScreen.h"
 #include "TextureManager.h"
-#include "Game.h"
 #include "Renderer.h"
 #include "GameObjectManager.h"
 #include <iostream>
 #include <string>
+#include "UIButton.h"
 
 MainMenuScreen::MainMenuScreen(std::string name) : AGameObject(name), ButtonListener()
 {
@@ -18,15 +18,8 @@ void MainMenuScreen::initialize()
 
 	UIButton* startButton = new UIButton("StartButton", normal, pressed);
 	this->attachChild(startButton);
-	startButton->setPosition();
-	startButton->setScale();
-
-	UIText* startBtnText = new UIText("startText");
-	startButton->attachChild(startBtnText);
-	startButton->setPosition(10, 10);
-	startButton->setSize(50);
-	startButton->setText("START");
-
+	startButton->setPosition(2,2);
+	startButton->getSprite()->setScale(1.0f, 1.0);
 }
 
 void MainMenuScreen::onButtonClick(UIButton* button)

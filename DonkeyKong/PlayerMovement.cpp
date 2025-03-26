@@ -10,7 +10,7 @@ void PlayerMovement::perform()
     Player* player = (Player*)GameObjectManager::getInstance()->findObjectByName("Player");
     PlayerInputController* input = (PlayerInputController*)this->getOwner()->findComponentByName(player->getName() + " Input");
     sf::Transformable* trans = player->getTransformable();
-    
+
 	if (input == nullptr)
 	{
 		std::cout << "playerTransformable not found" << std::endl;

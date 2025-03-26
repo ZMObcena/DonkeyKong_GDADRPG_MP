@@ -1,4 +1,5 @@
 #include "MainMenuScene.h"
+#include "MainMenuScreen.h"
 #include <iostream>
 
 MainMenuScene::MainMenuScene() : AScene("MainMenuScene")

@@ -5,10 +5,8 @@
 #include "UIButton.h"
 #include "UIText.h"
 
-using namespace std;
-
-typedef std::unordered_map<string, int> IntTable;
-typedef std::unordered_map<string, int> FloatTable;
+typedef std::unordered_map<std::string, int> IntTable;
+typedef std::unordered_map<std::string, int> FloatTable;
 
 typedef std::unordered_map<std::string, UIText*> TextTable;
 typedef std::unordered_map<std::string, UIButton*> ButtonTable;
@@ -16,14 +14,15 @@ typedef std::unordered_map<std::string, UIButton*> ButtonTable;
 class UIData
 {
 public:
+	UIData();
 	~UIData();
-	void putInt(string key, int value);
-	void putFloat(string key, float value);
-	int getInt(string key, int defaultVal);
-	float getFloat(string key, float defaultVal);
+	void putInt(std::string key, int value);
+	void putFloat(std::string key, float value);
+	int getInt(std::string key, int defaultVal);
+	float getFloat(std::string key, float defaultVal);
 
 	void bindUIText(UIText* uiText);
-	void refreshTextFromData(string objectName, string key, string prefix = "");
+	void refreshTextFromData(std::string objectName, std::string key, std::string prefix = "");
 
 private:
 	IntTable intTable;

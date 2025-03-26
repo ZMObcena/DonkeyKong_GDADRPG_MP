@@ -104,13 +104,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)rapidjson\include;$(SolutionDir)SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)SFML-2.5.1\bin;$(SolutionDir)SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;openal32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;flac.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;openal32.lib;sfml-audio-s-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;flac.lib;ogg.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -121,7 +122,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)rapidjson\include;$(SolutionDir)SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,7 +131,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)SFML-2.5.1\bin;$(SolutionDir)SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;openal32.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;flac.lib;ogg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>freetype.lib;winmm.lib;opengl32.lib;openal32.lib;sfml-audio-s-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;flac.lib;ogg.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -138,17 +140,13 @@
     <ClCompile Include="APoolable.cpp" />
     <ClCompile Include="ApplicationManager.cpp" />
     <ClCompile Include="AScene.cpp" />
-    <ClCompile Include="Barrel.cpp" />
     <ClCompile Include="Broadcaster.cpp" />
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="EmptyGameObject.cpp" />
-    <ClCompile Include="EnemySwarmHandler.cpp" />
     <ClCompile Include="FontManager.cpp" />
     <ClCompile Include="GameObjectPool.cpp" />
     <ClCompile Include="MainMenuScene.cpp" />
     <ClCompile Include="MainMenuScreen.cpp" />
-    <ClCompile Include="ObjectPoolHolder.cpp" />
-    <ClCompile Include="PhysicsManager.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="BGObject.cpp" />
     <ClCompile Include="Entity.cpp" />
@@ -174,19 +172,16 @@
     <ClInclude Include="APoolable.h" />
     <ClInclude Include="ApplicationManager.h" />
     <ClInclude Include="AScene.h" />
-    <ClInclude Include="Barrel.h" />
     <ClInclude Include="Broadcaster.h" />
     <ClInclude Include="ButtonListener.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="CollisionListener.h" />
     <ClInclude Include="EmptyGameObject.h" />
-    <ClInclude Include="EnemySwarmHandler.h" />
     <ClInclude Include="FontManager.h" />
     <ClInclude Include="GameObjectPool.h" />
     <ClInclude Include="IEventListener.h" />
     <ClInclude Include="MainMenuScene.h" />
     <ClInclude Include="MainMenuScreen.h" />
-    <ClInclude Include="ObjectPoolHolder.h" />
     <ClInclude Include="PhysicsManager.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="BGObject.h" />

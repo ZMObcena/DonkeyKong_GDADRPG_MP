@@ -3,22 +3,14 @@
 Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"), mPlayer()
 {
 	mWindow.setFramerateLimit(60);
-	Parameters params;
-	int x = 11;
-	int y = 13;
-	params["x"] = &x;
-	params["y"] = &y;
-
-	this->OnEventTrigger(EventKeys::Test, params);
 
 	TextureManager::getInstance()->loadAll();
 
-	BGObject* bgObject = new BGObject("BGObject");
-	GameObjectManager::getInstance()->addObject(bgObject);
+	//BGObject* bgObject = new BGObject("BGObject");
+	//GameObjectManager::getInstance()->addObject(bgObject);
 
 	Player* player = new Player("Player");
 	GameObjectManager::getInstance()->addObject(player);
-	//player->setPosition(200, 200);
 
 	/*
 	srand(time(nullptr));
@@ -29,8 +21,8 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"
 	*/
 
 
-	SceneManager::getInstance()->registerScene(new MainMenuScene());
-	SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE_NAME);
+	//SceneManager::getInstance()->registerScene(new MainMenuScene());
+	//SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE_NAME);
 }
 
 void Game::run()
@@ -49,7 +41,7 @@ void Game::run()
 			update(TimePerFrame);	
 		}
 		render();
-		SceneManager::getInstance()->checkLoadScene();
+		//SceneManager::getInstance()->checkLoadScene();
 	}
 }
 
@@ -81,9 +73,4 @@ void Game::update(sf::Time deltaTime)
 	{
 		GameObjectManager::getInstance()->update(deltaTime);
 	}
-}
-
-void Game::OnEventTrigger(EventKeys eventName, Parameters params)
-{
-	//cout >>
 }

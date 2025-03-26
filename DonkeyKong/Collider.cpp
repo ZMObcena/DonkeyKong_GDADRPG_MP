@@ -3,7 +3,7 @@
 
 Collider::Collider(std::string strName) : AComponent(strName, AComponent::Physics) 
 {
-
+    this->listener = NULL;
 }
 
 void Collider::assignListener(CollisionListener* pListener) 
@@ -45,6 +45,10 @@ void Collider::onCollisionExit(AGameObject* object) {
     }
 }
 
+void Collider::clearCollisions()
+{
+    this->collisions.clear();
+}
 
 void Collider::setOffset(sf::FloatRect COffset) {
     this->localBounds = COffset;

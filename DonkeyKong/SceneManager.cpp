@@ -1,12 +1,10 @@
 #include "SceneManager.h"
 #include <iostream>
 
-string SceneManager::MAIN_MENU_SCENE_NAME = "MainMenuScene";
-string SceneManager::GAME_SCENE_NAME = "GameScene";
+std::string SceneManager::MAIN_MENU_SCENE_NAME = "MainMenuScene";
+std::string SceneManager::GAME_SCENE_NAME = "GameScene";
 
 SceneManager* SceneManager::sharedInstance = nullptr;
-
-using namespace std;
 
 void SceneManager::registerScene(AScene* scene)
 {

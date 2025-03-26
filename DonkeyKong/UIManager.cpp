@@ -2,7 +2,7 @@
 
 UIManager* UIManager::sharedInstance = NULL;
 
-const string UIManager::SCORE_UI_KEY = "SCORE_UI_KEY";
+const std::string UIManager::SCORE_UI_KEY = "SCORE_UI_KEY";
 
 UIManager* UIManager::getInstance()
 {
@@ -17,6 +17,7 @@ UIData* UIManager::getUIData(std::string name)
 {
 	return this->dataTable[name];
 }
+
 UIData* UIManager::storeData(std::string name)
 {
 	if (this->dataTable[name] != nullptr)

@@ -57,25 +57,13 @@
     <ClCompile Include="GameObjectPool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ObjectPoolHolder.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="APoolable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Barrel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="EmptyGameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EnemySwarmHandler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Collider.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PhysicsManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AScene.cpp">
@@ -158,19 +146,10 @@
     <ClInclude Include="GameObjectPool.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ObjectPoolHolder.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="APoolable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Barrel.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="EmptyGameObject.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemySwarmHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Collider.h">

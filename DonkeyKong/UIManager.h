@@ -10,7 +10,7 @@ typedef std::unordered_map<std::string, UIData*> DataTable;
 class UIManager
 {
 public:
-	static const string SCORE_UI_KEY;
+	static const std::string SCORE_UI_KEY;
 	static UIManager* getInstance();
 
 	UIData* getUIData(std::string name);
