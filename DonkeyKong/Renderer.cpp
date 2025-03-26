@@ -1,4 +1,5 @@
 #include "Renderer.h"
+#include "SpriteRenderer.h"
 
 Renderer::Renderer(std::string name) : AComponent(name, AComponent::Renderer)
 {
@@ -7,11 +8,6 @@ Renderer::Renderer(std::string name) : AComponent(name, AComponent::Renderer)
 
 Renderer::~Renderer()
 {
-	if (this->drawable != nullptr)
-	{
-		delete this->drawable;
-	}
-
 	AComponent::~AComponent();
 }
 
@@ -33,4 +29,9 @@ void Renderer::setRenderStates(sf::RenderStates renderStates)
 void Renderer::perform()
 {
 	this->targetWindow->draw(*this->drawable, this->renderStates);
+}
+
+Renderer* Renderer::CreateSprite(std::string name, std::string resourceName)
+{
+	return new SpriteRenderer(name, resourceName);
 }

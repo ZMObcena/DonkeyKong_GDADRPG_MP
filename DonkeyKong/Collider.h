@@ -3,6 +3,7 @@
 #include "CollisionListener.h"
 #include "AComponent.h"
 #include "AGameObject.h"
+#include <unordered_set>
 
 class Collider : public AComponent
 {
@@ -11,13 +12,10 @@ public:
 
     void assignListener(CollisionListener* pListener);
 
-    void setChecked(bool flag);
-    bool isChecked();
-
-
     bool willCollide(Collider* pCollider);
-    bool hasCollided();
-    void setCollided(bool bCollided);
+    bool hasCollisionWith(Collider* collider);
+    void addCollision(Collider* collider);
+    void removeCollision(Collider* collider);
 
     sf::FloatRect getGlobalBounds();
     void setOffset(sf::FloatRect COffset);
@@ -25,10 +23,11 @@ public:
     void onCollisionExit(AGameObject* pCollider);
 
     void perform();
+    void clearCollisions();
 
 private:
-    bool collided = false;
     bool checked = false;
+    std::unordered_set<Collider*> collisions;
     sf::FloatRect localBounds;
     CollisionListener* listener;
 };

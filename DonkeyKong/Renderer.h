@@ -12,6 +12,8 @@ public:
 
 	void perform();
 
+	static Renderer* CreateSprite(std::string name, std::string resourceName);
+
 private:
 	sf::RenderWindow* targetWindow;
 	sf::Drawable* drawable;

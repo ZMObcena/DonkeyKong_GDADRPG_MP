@@ -16,7 +16,7 @@ PhysicsManager* PhysicsManager::getInstance()
 
 void PhysicsManager::trackObject(Collider* object) 
 {
-	object->setCollided(false);
+	object->clearCollisions();
 	this->trackedObjects.push_back(object);
 }
 
@@ -29,16 +29,36 @@ void PhysicsManager::perform()
 {
 	for (int i = 0; i < this->trackedObjects.size(); i++)
 	{
-		for (int j = 0; j < this->trackedObjects.size(); j++)
+		for (int j = i + j; j < this->trackedObjects.size(); j++)
 		{
-			if (this->trackedObjects[i] != this->trackedObjects[j] &&
-				this->trackedObjects[i]->getOwner()->isEnabled() &&
+			if (this->trackedObjects[i]->getOwner()->isEnabled() &&
 				this->trackedObjects[j]->getOwner()->isEnabled())
 			{
 				if (this->trackedObjects[i]->willCollide(this->trackedObjects[j]))
 				{
-					this->trackedObjects[i]->onCollisionEnter(this->trackedObjects[j]->getOwner());
-					this->trackedObjects[j]->onCollisionEnter(this->trackedObjects[i]->getOwner());
+					if (!this->trackedObjects[i]->hasCollisionWith(this->trackedObjects[j]))
+					{
+						this->trackedObjects[i]->addCollision(this->trackedObjects[j]);
+						this->trackedObjects[i]->onCollisionEnter(this->trackedObjects[j]->getOwner());
+					}
+					if (!this->trackedObjects[j]->hasCollisionWith(this->trackedObjects[i]))
+					{
+						this->trackedObjects[j]->addCollision(this->trackedObjects[i]);
+						this->trackedObjects[j]->onCollisionEnter(this->trackedObjects[i]->getOwner());
+					}
+				}
+				else
+				{
+					if (this->trackedObjects[i]->hasCollisionWith(this->trackedObjects[j]))
+					{
+						this->trackedObjects[i]->onCollisionExit(this->trackedObjects[j]->getOwner());
+						this->trackedObjects[i]->removeCollision(this->trackedObjects[j]);
+					}
+					if (this->trackedObjects[j]->hasCollisionWith(this->trackedObjects[i]))
+					{
+						this->trackedObjects[j]->onCollisionExit(this->trackedObjects[i]->getOwner());
+						this->trackedObjects[j]->removeCollision(this->trackedObjects[i]);
+					}
 				}
 			}
 		}

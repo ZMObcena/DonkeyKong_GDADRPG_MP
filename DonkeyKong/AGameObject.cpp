@@ -7,9 +7,19 @@ AGameObject::AGameObject(std::string name)
 
 AGameObject::~AGameObject()
 {
-	if (this->sprite != NULL)
+	if (this->sprite != nullptr)
 	{
 		delete this->sprite;
+	}
+
+	for (int i = 0; i < this->componentList.size(); i++)
+	{
+		delete this->componentList[i];
+	}
+
+	for (int i = 0; i < this->childList.size(); i++)
+	{
+		delete this->childList[i];
 	}
 }
 
@@ -90,6 +100,7 @@ void AGameObject::update(sf::Time time)
 void AGameObject::attachChild(AGameObject* child)
 {
 	this->childList.push_back(child);
+	child->setParent(this);
 	child->initialize();
 }
 
@@ -241,4 +252,14 @@ sf::Transform AGameObject::getGlobalTransform()
 	}
 
 	return transform;
+}
+
+AGameObject* AGameObject::getParent()
+{
+	return this->parent;
+}
+
+void AGameObject::setParent(AGameObject* object)
+{
+	this->parent = object;
 }

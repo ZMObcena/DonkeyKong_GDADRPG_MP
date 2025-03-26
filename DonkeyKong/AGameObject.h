@@ -34,8 +34,12 @@ public:
 
 	sf::Transform getGlobalTransform();
 
+	AGameObject* getParent();
+
 
 protected:
+	void setParent(AGameObject* object);
+
 	sf::Transformable transformable;
 	std::string name;
 	sf::Sprite* sprite;
@@ -44,6 +48,7 @@ protected:
 	std::vector<AComponent*> componentList;
 
 private:
+	AGameObject* parent;
 	std::vector<AComponent*> getComponentsRecursiveProper(AGameObject* object, AComponent::ComponentType type, std::vector<AComponent*> foundList);
 	bool enabled = true;
 };

@@ -74,6 +74,17 @@ void GameObjectManager::deleteObjectByName(std::string name)
 	}
 }
 
+void GameObjectManager::deleteAllObjectsInScene()
+{
+	for (int i = 0; i < this->mGameObjectList.size(); i++)
+	{
+		delete this->mGameObjectList[i];
+	}
+
+	this->mGameObjectList.clear();
+	this->mGameObjectList.shrink_to_fit();
+	this->mGameObjectList.clear();
+}
 
 GameObjectManager* GameObjectManager::sharedInstance = nullptr;
 

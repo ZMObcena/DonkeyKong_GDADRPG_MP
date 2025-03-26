@@ -1,15 +1,24 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "Entity.h"
+
 #include "GameObjectManager.h"
+#include "SceneManager.h"
 #include "TextureManager.h"
+#include "MainMenuScene.h"
+#include "ApplicationManager.h"
+
 #include "BGObject.h"
 #include "Player.h"
 
-class Game
+#include "IEventListener.h"
+
+class Game : public IEventListener
 {
 public:
 	Game();
+
+	void OnEventTrigger(EventKeys eventName, Parameters params);
 	void run();
 	const sf::Time TimePerFrame = sf::seconds(1.f / 60.f);
 	const int WINDOW_WIDTH = 640;

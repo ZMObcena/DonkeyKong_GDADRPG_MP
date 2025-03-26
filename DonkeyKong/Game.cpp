@@ -1,8 +1,16 @@
 #include "Game.h"
 
-Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Airplane"), mPlayer()
+Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"), mPlayer()
 {
 	mWindow.setFramerateLimit(60);
+	Parameters params;
+	int x = 11;
+	int y = 13;
+	params["x"] = &x;
+	params["y"] = &y;
+
+	this->OnEventTrigger(EventKeys::Test, params);
+
 	TextureManager::getInstance()->loadAll();
 
 	BGObject* bgObject = new BGObject("BGObject");
@@ -12,14 +20,6 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Airplane"), 
 	GameObjectManager::getInstance()->addObject(player);
 	//player->setPosition(200, 200);
 
-	//AirplaneSupport* support1 = new AirplaneSupport("AirSupport_1");
-	//player->attachChild(support1);
-	//support1->setPosition(50, 100);
-
-	//AirplaneSupport* support2 = new AirplaneSupport("AirSupport_2");
-	//player->attachChild(support2);
-	//support1->setPosition(50, 100);
-
 	/*
 	srand(time(nullptr));
 	EmptyGameObject* enemiesManager = new EmptyGameObject("EnemiesManager");
@@ -27,19 +27,29 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Airplane"), 
 	enemiesManager->attachComponent(swarmHandler);
 	GameObjectManager::getInstance()->addObject(enemiesManager);
 	*/
+
+
+	SceneManager::getInstance()->registerScene(new MainMenuScene());
+	SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE_NAME);
 }
 
 void Game::run()
 {
 	sf::Clock clock;
+	sf::Time timeSinceLastUpdate = sf::Time::Zero;
 
 	while (mWindow.isOpen())
 	{
-		sf::Time deltaTime = clock.restart();
-
 		processEvents();
-		update(deltaTime);
+		timeSinceLastUpdate += clock.restart();
+		while (timeSinceLastUpdate > TimePerFrame)
+		{
+			timeSinceLastUpdate -= TimePerFrame;
+			processEvents();
+			update(TimePerFrame);	
+		}
 		render();
+		SceneManager::getInstance()->checkLoadScene();
 	}
 }
 
@@ -67,6 +77,13 @@ void Game::render()
 
 void Game::update(sf::Time deltaTime)
 {
-	GameObjectManager::getInstance()->update(deltaTime);
+	if (!ApplicationManager::getInstance()->isPaused())
+	{
+		GameObjectManager::getInstance()->update(deltaTime);
+	}
 }
 
+void Game::OnEventTrigger(EventKeys eventName, Parameters params)
+{
+	//cout >>
+}

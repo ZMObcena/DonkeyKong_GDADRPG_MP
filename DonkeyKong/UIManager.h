@@ -1,0 +1,28 @@
+#pragma once
+
+#include <unordered_map>
+#include "UIButton.h"
+#include "UIText.h"
+#include "UIData.h"
+
+typedef std::unordered_map<std::string, UIData*> DataTable;
+
+class UIManager
+{
+public:
+	static const string SCORE_UI_KEY;
+	static UIManager* getInstance();
+
+	UIData* getUIData(std::string name);
+	UIData* storeData(std::string name);
+	void removeData(std::string name);
+
+private:
+	UIManager() {};
+	UIManager(UIManager const&) {};
+	UIManager& operator = (UIManager const&) {};
+	static UIManager* sharedInstance;
+
+	DataTable dataTable;
+};
+

@@ -11,24 +11,26 @@ void Collider::assignListener(CollisionListener* pListener)
     this->listener = pListener;
 }
 
-void Collider::setChecked(bool flag)
-{
-    this->checked = flag;
+bool Collider::hasCollisionWith(Collider* collider)
+{ 
+    return this->collisions.find(collider) != this->collisions.end(); 
 }
 
-bool Collider::isChecked() { return this->checked; }
+void Collider::addCollision(Collider* collider)
+{
+    this->collisions.insert(collider);
+}
+
+void Collider::removeCollision(Collider* collider)
+{
+    this->collisions.erase(collider);
+}
 
 bool Collider::willCollide(Collider* pCollider) {
     sf::FloatRect CBoundsA = this->getGlobalBounds();
     sf::FloatRect CBoundsB = pCollider->getGlobalBounds();
 
     return CBoundsA.intersects(CBoundsB);
-}
-
-bool Collider::hasCollided() { return this->collided; }
-
-void Collider::setCollided(bool bCollided) {
-    this->collided = bCollided;
 }
 
 void Collider::onCollisionEnter(AGameObject* object) {

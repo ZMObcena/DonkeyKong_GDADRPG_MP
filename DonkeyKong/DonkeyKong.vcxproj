@@ -133,15 +133,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\OLD FILES\MP\Lethal Company\Controller\Manager\SceneManager.cpp" />
     <ClCompile Include="AComponent.cpp" />
     <ClCompile Include="AGameObject.cpp" />
     <ClCompile Include="APoolable.cpp" />
+    <ClCompile Include="ApplicationManager.cpp" />
+    <ClCompile Include="AScene.cpp" />
     <ClCompile Include="Barrel.cpp" />
+    <ClCompile Include="Broadcaster.cpp" />
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="EmptyGameObject.cpp" />
     <ClCompile Include="EnemySwarmHandler.cpp" />
+    <ClCompile Include="FontManager.cpp" />
     <ClCompile Include="GameObjectPool.cpp" />
+    <ClCompile Include="MainMenuScene.cpp" />
+    <ClCompile Include="MainMenuScreen.cpp" />
     <ClCompile Include="ObjectPoolHolder.cpp" />
     <ClCompile Include="PhysicsManager.cpp" />
     <ClCompile Include="Player.cpp" />
@@ -154,19 +159,33 @@
     <ClCompile Include="PlayerInputController.cpp" />
     <ClCompile Include="PlayerMovement.cpp" />
     <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SpriteRenderer.cpp" />
     <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="UIButton.cpp" />
+    <ClCompile Include="UIButtonInputController.cpp" />
+    <ClCompile Include="UIData.cpp" />
+    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="UIText.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\OLD FILES\MP\Lethal Company\Controller\Manager\SceneManager.hpp" />
     <ClInclude Include="AComponent.h" />
     <ClInclude Include="AGameObject.h" />
     <ClInclude Include="APoolable.h" />
+    <ClInclude Include="ApplicationManager.h" />
+    <ClInclude Include="AScene.h" />
     <ClInclude Include="Barrel.h" />
+    <ClInclude Include="Broadcaster.h" />
+    <ClInclude Include="ButtonListener.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="CollisionListener.h" />
     <ClInclude Include="EmptyGameObject.h" />
     <ClInclude Include="EnemySwarmHandler.h" />
+    <ClInclude Include="FontManager.h" />
     <ClInclude Include="GameObjectPool.h" />
+    <ClInclude Include="IEventListener.h" />
+    <ClInclude Include="MainMenuScene.h" />
+    <ClInclude Include="MainMenuScreen.h" />
     <ClInclude Include="ObjectPoolHolder.h" />
     <ClInclude Include="PhysicsManager.h" />
     <ClInclude Include="Player.h" />
@@ -178,7 +197,14 @@
     <ClInclude Include="PlayerInputController.h" />
     <ClInclude Include="PlayerMovement.h" />
     <ClInclude Include="Renderer.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SpriteRenderer.h" />
     <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="UIButton.h" />
+    <ClInclude Include="UIButtonInputController.h" />
+    <ClInclude Include="UIData.h" />
+    <ClInclude Include="UIManager.h" />
+    <ClInclude Include="UIText.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
