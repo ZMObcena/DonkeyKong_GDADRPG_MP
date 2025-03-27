@@ -1,4 +1,5 @@
 #pragma once
+
 #include "AGameObject.h"
 #include "PlayerInputController.h"
 #include "PlayerMovement.h"
@@ -6,7 +7,10 @@
 #include "TextureManager.h"
 #include <iostream>
 
-class Player : public AGameObject
+#include "CollisionListener.h"
+#include "Collider.h"
+
+class Player : public AGameObject, public CollisionListener
 {
 public:
 	Player(std::string name);
@@ -14,14 +18,16 @@ public:
 	void initialize();
 
 	float getSpeed();
+	void onCollisionEnter(AGameObject* object);
+	void onCollisionExit(AGameObject* object);
+	
+	bool isOnFloor();
+	bool isOnLadder();
 
 private:
-	bool bIsMovingUp = false;
-	bool bIsMovingDown = false;
-	bool bIsMovingLeft = false;
-	bool bIsMovingRight = false;
-
 	float fPlayerSpeed = 500.f;
+	bool onFloor;
+	bool onLadder;
 
 protected:
 	sf::Transformable transformable;

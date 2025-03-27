@@ -11,6 +11,9 @@ class SceneManager
 public:
 	static std::string MAIN_MENU_SCENE_NAME;
 	static std::string GAME_SCENE_NAME;
+	static std::string LEVEL_1_SCENE;
+	static std::string LEVEL_2_SCENE;
+	static std::string LEVEL_3_SCENE;
 
 	static SceneManager* getInstance();
 	void registerScene(AScene* scene);

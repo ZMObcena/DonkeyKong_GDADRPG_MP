@@ -19,10 +19,9 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"
 	enemiesManager->attachComponent(swarmHandler);
 	GameObjectManager::getInstance()->addObject(enemiesManager);
 	*/
-
 	FontManager::getInstance()->loadAll();
 	SceneManager::getInstance()->registerScene(new MainMenuScene());
-	//SceneManager::getInstance()->registerScene(new GameScene());
+	SceneManager::getInstance()->registerScene(new Level1Scene());
 	SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE_NAME);
 }
 

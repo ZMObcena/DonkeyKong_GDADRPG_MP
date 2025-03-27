@@ -1,9 +1,8 @@
 #include "Collider.h"
 
-
 Collider::Collider(std::string strName) : AComponent(strName, AComponent::Physics) 
 {
-    this->listener = NULL;
+    //this->listener = NULL;
 }
 
 void Collider::assignListener(CollisionListener* pListener) 
@@ -27,10 +26,10 @@ void Collider::removeCollision(Collider* collider)
 }
 
 bool Collider::willCollide(Collider* pCollider) {
-    sf::FloatRect CBoundsA = this->getGlobalBounds();
-    sf::FloatRect CBoundsB = pCollider->getGlobalBounds();
+    sf::FloatRect A = this->getGlobalBounds();
+    sf::FloatRect B = pCollider->getGlobalBounds();
 
-    return CBoundsA.intersects(CBoundsB);
+    return A.intersects(B);
 }
 
 void Collider::onCollisionEnter(AGameObject* object) {
@@ -47,7 +46,14 @@ void Collider::onCollisionExit(AGameObject* object) {
 
 void Collider::clearCollisions()
 {
-    this->collisions.clear();
+    for (Collider* collider : this->collisions)
+    {
+        collider->onCollisionExit(this->getOwner());
+        this->onCollisionExit(collider->getOwner());
+        collider->removeCollision(this);
+    }
+
+    collisions.clear();
 }
 
 void Collider::setOffset(sf::FloatRect COffset) {
@@ -60,3 +66,4 @@ sf::FloatRect Collider::getGlobalBounds() {
 }
 
 void Collider::perform() {}
+

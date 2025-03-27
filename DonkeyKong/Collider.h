@@ -21,9 +21,9 @@ public:
     void setOffset(sf::FloatRect COffset);
     void onCollisionEnter(AGameObject* pCollider);
     void onCollisionExit(AGameObject* pCollider);
+    void clearCollisions();
 
     void perform();
-    void clearCollisions();
 
 private:
     bool checked = false;

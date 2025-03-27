@@ -142,10 +142,13 @@
     <ClCompile Include="AScene.cpp" />
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="EmptyGameObject.cpp" />
+    <ClCompile Include="Floor.cpp" />
     <ClCompile Include="FontManager.cpp" />
     <ClCompile Include="GameObjectPool.cpp" />
+    <ClCompile Include="Level1Scene.cpp" />
     <ClCompile Include="MainMenuScene.cpp" />
     <ClCompile Include="MainMenuScreen.cpp" />
+    <ClCompile Include="PhysicsManager.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="BGObject.cpp" />
     <ClCompile Include="Entity.cpp" />
@@ -175,9 +178,11 @@
     <ClInclude Include="Collider.h" />
     <ClInclude Include="CollisionListener.h" />
     <ClInclude Include="EmptyGameObject.h" />
+    <ClInclude Include="Floor.h" />
     <ClInclude Include="FontManager.h" />
     <ClInclude Include="GameObjectPool.h" />
     <ClInclude Include="IEventListener.h" />
+    <ClInclude Include="Level1Scene.h" />
     <ClInclude Include="MainMenuScene.h" />
     <ClInclude Include="MainMenuScreen.h" />
     <ClInclude Include="PhysicsManager.h" />

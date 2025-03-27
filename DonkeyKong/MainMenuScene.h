@@ -3,7 +3,6 @@
 #include "AScene.h"
 #include "GameObjectManager.h"
 
-
 class MainMenuScene : public AScene
 {
 public:

@@ -21,6 +21,7 @@ void TextureManager::unloadAll() {}
 void TextureManager::loadAll()
 {
     loadTextureAndSpriteSheet("Mario", "Media/Atlas/Mario_Atlas.png", "Media/Atlas/Mario_Atlas.json");
+    loadTexture("Floor", "Media/Sprites/Floor.png");
 }
 
 void TextureManager::loadMainMenu()

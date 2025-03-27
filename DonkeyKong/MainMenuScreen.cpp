@@ -22,6 +22,7 @@ void MainMenuScreen::initialize()
 	this->startButton = new UIButton("StartButton", normal, pressed);
 	this->attachChild(this->startButton);
 	this->startButton->setPosition(1920 / 2, 800);
+	this->startButton->getTransformable()->setScale(1.5f, 1.5f);
 	this->startButton->setButtonListener(this);
 	//this->startButton->getSprite()->setScale(4.0f, 4.0);
 
@@ -30,9 +31,18 @@ void MainMenuScreen::initialize()
 
 	this->exitButton = new UIButton("ExitButton", normal, pressed);
 	this->attachChild(this->exitButton);
-	this->exitButton->setPosition(1920 / 2, 900);
+	this->exitButton->setPosition(1920 / 2, 950);
+	this->exitButton->getTransformable()->setScale(1.5f, 1.5f);
 	this->exitButton->setButtonListener(this);
 	//this->startButton->getSprite()->setScale(4.0f, 4.0);
+
+	normal = TextureManager::getInstance()->getTexture("Title");
+	pressed = TextureManager::getInstance()->getTexture("Title");
+
+	this->logo = new UIButton("Logo", normal, pressed);
+	this->attachChild(this->logo);
+	this->logo->setPosition(1920 / 2, 380);
+	this->logo->getTransformable()->setScale(7.0f, 7.0f);
 
 }
 
@@ -50,6 +60,6 @@ void MainMenuScreen::onButtonReleased(UIButton* button)
 	
 	if (button == this->startButton)
 	{
-		SceneManager::getInstance()->loadScene(SceneManager::GAME_SCENE_NAME);
+		SceneManager::getInstance()->loadScene(SceneManager::LEVEL_1_SCENE);
 	}
 }

@@ -16,6 +16,7 @@ public:
 private:
 	UIButton* startButton;
 	UIButton* exitButton;
+	UIButton* logo;
 
 };
 

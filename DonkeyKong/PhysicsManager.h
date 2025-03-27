@@ -27,6 +27,7 @@ private:
 	CollisionList trackedObjects;
 	CollisionList forCleaningObjects;
 
-	void cleanupObjects();
+	void cleanUpObjects();
+
 };
 
