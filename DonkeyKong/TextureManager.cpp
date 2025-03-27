@@ -16,12 +16,20 @@ TextureManager* TextureManager::getInstance()
 	return sharedInstance;
 }
 
+void TextureManager::unloadAll() {}
+
 void TextureManager::loadAll()
 {
-	//loadTexture("Mario", "Media/Atlas/Mario_Atlas.png");
-    //loadSpriteSheet("Media/Atlas/Mario_Atlas.json");
-
     loadTextureAndSpriteSheet("Mario", "Media/Atlas/Mario_Atlas.png", "Media/Atlas/Mario_Atlas.json");
+}
+
+void TextureManager::loadMainMenu()
+{
+    loadTexture("Start_normal", "Media/Sprites/Start1.png");
+    loadTexture("Start_pressed", "Media/Sprites/Start2.png");
+    loadTexture("Exit_normal", "Media/Sprites/Exit1.png");
+    loadTexture("Exit_pressed", "Media/Sprites/Exit2.png");
+    loadTexture("Title", "Media/Sprites/dk.png");
 }
 
 void TextureManager::loadTexture(std::string key, std::string path)

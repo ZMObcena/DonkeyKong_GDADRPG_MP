@@ -1,6 +1,6 @@
 #include "AScene.h"
 
-AScene::AScene(std::string sceneNmae) 
+AScene::AScene(std::string sceneName) 
 {
     this->sceneName = sceneName;
 }

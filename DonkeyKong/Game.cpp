@@ -4,13 +4,13 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"
 {
 	mWindow.setFramerateLimit(60);
 
-	TextureManager::getInstance()->loadAll();
+	//TextureManager::getInstance()->loadAll();
 
 	//BGObject* bgObject = new BGObject("BGObject");
 	//GameObjectManager::getInstance()->addObject(bgObject);
 
-	Player* player = new Player("Player");
-	GameObjectManager::getInstance()->addObject(player);
+	//Player* player = new Player("Player");
+	//GameObjectManager::getInstance()->addObject(player);
 
 	/*
 	srand(time(nullptr));
@@ -20,28 +20,28 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"
 	GameObjectManager::getInstance()->addObject(enemiesManager);
 	*/
 
-
-	//SceneManager::getInstance()->registerScene(new MainMenuScene());
-	//SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE_NAME);
+	FontManager::getInstance()->loadAll();
+	SceneManager::getInstance()->registerScene(new MainMenuScene());
+	//SceneManager::getInstance()->registerScene(new GameScene());
+	SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE_NAME);
 }
 
 void Game::run()
 {
 	sf::Clock clock = sf::Clock();
 	sf::Time timeSinceLastUpdate = sf::Time::Zero;
-	sf::Time tTimePerFrame = sf::seconds(1.0f / 60);
 
 	while (mWindow.isOpen())
 	{
 		this->processEvents();
 		timeSinceLastUpdate += clock.restart();
-		while (timeSinceLastUpdate > tTimePerFrame)
+		while (timeSinceLastUpdate > TimePerFrame)
 		{
 			timeSinceLastUpdate -= TimePerFrame;
 			this->update(TimePerFrame);
 		}
+		SceneManager::getInstance()->checkLoadScene();
 		this->render();
-		//SceneManager::getInstance()->checkLoadScene();
 	}
 }
 

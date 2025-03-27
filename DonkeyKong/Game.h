@@ -7,11 +7,12 @@
 #include "TextureManager.h"
 #include "MainMenuScene.h"
 #include "ApplicationManager.h"
+#include "FontManager.h"
 
 #include "BGObject.h"
 #include "Player.h"
 
-#include "IEventListener.h"
+//#include "IEventListener.h"
 
 class Game 
 {
@@ -21,8 +22,8 @@ public:
 	//void OnEventTrigger(EventKeys eventName, Parameters params);
 	void run();
 	const sf::Time TimePerFrame = sf::seconds(1.f / 60.f);
-	const int WINDOW_WIDTH = 640;
-	const int WINDOW_HEIGHT = 480;
+	const int WINDOW_WIDTH = 1920;
+	const int WINDOW_HEIGHT = 1080;
 
 private:
 	void processEvents();

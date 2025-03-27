@@ -8,7 +8,9 @@ class TextureManager
 public:
 	static TextureManager* getInstance();
 
+	void unloadAll();
 	void loadAll();
+	void loadMainMenu();
 	sf::Texture* getTexture(std::string);
 	sf::IntRect getSpriteRect(std::string key, int index);
 	std::vector<std::string> getAnimationFrames(std::string textureName, std::string animName);

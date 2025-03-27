@@ -24,12 +24,20 @@ void PlayerMovement::perform()
         trans->move(0.0f, -fOffset);
     }
     if (input->isDown())
+    {
         trans->move(0.0f, fOffset);
+    }
 
     if (input->isLeft())
+    {
         trans->move(-fOffset, 0.0f);
 
+    }
+
     if (input->isRight())
+    {
         trans->move(fOffset, 0.0f);
+
+    }
         
 }

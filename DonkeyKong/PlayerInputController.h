@@ -12,6 +12,7 @@ public:
 	bool isDown();
 	bool isRight();
 	bool isLeft();
+	bool isJumping();
 
 private:
 	void processKeyInput(bool pressed);
@@ -22,5 +23,6 @@ private:
 	bool moveDown = false;
 	bool moveRight = false;
 	bool moveLeft = false;
+	bool jump = false;
 };
 

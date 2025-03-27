@@ -20,6 +20,7 @@ void UIButtonInputController::perform()
 		this->pressed = false;
 		button->changeButtonToNormal();
 		this->listener->onButtonReleased(button);
+		std::cout << "Button released. \n";
 	}
 
 	if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left)

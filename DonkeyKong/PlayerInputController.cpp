@@ -12,7 +12,8 @@ PlayerInputController::~PlayerInputController()
 
 void PlayerInputController::perform()
 {
-    switch (this->event.type) {
+    switch (this->event.type) 
+    {
     case sf::Event::KeyPressed:
         this->processKeyInput(true);
         break;
@@ -32,9 +33,9 @@ void PlayerInputController::processKeyInput(bool pressed)
 
     switch (key) {
 
-    /*case sf::Keyboard::Space:
-        this->moveUp = pressed;
-        break;*/
+    case sf::Keyboard::Space:
+        this->jump = pressed;
+        break;
 
     case sf::Keyboard::W:
         this->moveUp = pressed;
@@ -77,3 +78,7 @@ bool PlayerInputController::isLeft()
 	return moveLeft;
 }
 
+bool PlayerInputController::isJumping()
+{
+    return jump;
+}

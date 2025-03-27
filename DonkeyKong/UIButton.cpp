@@ -17,7 +17,7 @@ void UIButton::initialize()
 	sf::Vector2u textureSize = sprite->getTexture()->getSize();
 	sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
 
-	Renderer* renderer = new Renderer("Button");
+	Renderer* renderer = new Renderer(this->name + " Renderer");
 	renderer->assignDrawable(sprite);
 	this->attachComponent(renderer);
 }
@@ -65,4 +65,5 @@ void UIButton::setButtonListener(ButtonListener* listener)
 {
 	this->listener = listener;
 	UIButtonInputController* inputController = new UIButtonInputController("UI_InputController", this->listener);
+	this->attachComponent(inputController);
 }

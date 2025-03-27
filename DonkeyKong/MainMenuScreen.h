@@ -12,5 +12,10 @@ public:
 	void initialize();
 	void onButtonClick(UIButton* button);
 	void onButtonReleased(UIButton* button);
+
+private:
+	UIButton* startButton;
+	UIButton* exitButton;
+
 };
 
