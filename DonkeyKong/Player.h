@@ -25,9 +25,10 @@ public:
 	bool isOnLadder();
 
 private:
-	float fPlayerSpeed = 500.f;
+	float fPlayerSpeed = 250.f;
 	bool onFloor;
 	bool onLadder;
+	AGameObject* object;
 
 protected:
 	sf::Transformable transformable;

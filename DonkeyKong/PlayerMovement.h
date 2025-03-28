@@ -11,6 +11,10 @@ public:
 	void perform();
 
 private:
-	const float SPEED_MULTIPLIER = 300.0f;
+	bool isJumping = false;
+	float velocityY = 0.0f;
+	float jumpDirection = 0.0f;
+	const float gravity = 980.0f; // Gravity acceleration
+	const float jumpStrength = -350.0f; // Upward force when jumping
 };
 

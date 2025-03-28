@@ -17,27 +17,56 @@ void PlayerMovement::perform()
     float fSpeed = player->getSpeed();
     float fOffset = fSpeed * this->deltaTime.asSeconds();
 
+    bool isGrounded = player->isOnFloor();
+    bool isOnLadder = player->isOnLadder();
 
+    if (isGrounded)
+    {
+        isJumping = false;
+        velocityY = 0.0f; // Reset vertical velocity when on ground
+        jumpDirection = 0.0f;
+    }
 
-    if (input->isUp())
+     //Ladder Movement
+    if (input->isUp() && isOnLadder)
     {
         trans->move(0.0f, -fOffset);
     }
-    if (input->isDown())
+    if (input->isDown() && isOnLadder)
     {
         trans->move(0.0f, fOffset);
     }
 
-    if (input->isLeft())
+    // Horizontal Movement (Maintain jump direction mid-air)
+    if (!isJumping)
     {
-        trans->move(-fOffset, 0.0f);
-
+        if (input->isLeft())
+        {
+            trans->move(-fOffset, 0.0f);
+            jumpDirection = -fOffset; // Store direction
+        }
+        if (input->isRight())
+        {
+            trans->move(fOffset, 0.0f);
+            jumpDirection = fOffset; // Store direction
+        }
+    }
+    else // If jumping, maintain direction
+    {
+        trans->move(jumpDirection, 0.0f);
     }
 
-    if (input->isRight())
+    // Jumping Logic
+    if (input->isJumping() && isGrounded && !isOnLadder)
     {
-        trans->move(fOffset, 0.0f);
-
+        isJumping = true;
+        velocityY = jumpStrength;
     }
-        
+
+    // Apply Gravity
+    if (!isGrounded || isJumping && !isOnLadder)
+    {
+        velocityY += gravity * this->deltaTime.asSeconds();
+        trans->move(0.0f, velocityY * this->deltaTime.asSeconds());
+    }
 }

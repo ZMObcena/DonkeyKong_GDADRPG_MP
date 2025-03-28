@@ -1,7 +1,9 @@
 #include "Floor.h"
 #include "PhysicsManager.h"
+#include "Level1Scene.h"
+#include "FloorManager.h"
 
-Floor::Floor(std::string name) : AGameObject(name), CollisionListener()
+Floor::Floor(std::string name) : APoolable(name), CollisionListener()
 {
 	this->name = name;
 }
@@ -17,7 +19,8 @@ void Floor::initialize()
 	this->sprite->setTexture(*TextureManager::getInstance()->getTexture("Floor"));
 	sf::Vector2u textureSize = sprite->getTexture()->getSize();
 	sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
-	sprite->setScale(3.0f, 3.0f);
+	sprite->setScale(65.f, 2.f);
+	//sprite->setPosition(1920 / 2, 500);
 
 	Renderer* renderer = new Renderer(this->name + " Renderer");
 	renderer->assignDrawable(sprite);
@@ -28,6 +31,28 @@ void Floor::initialize()
 	collider->assignListener(this);
 	this->attachComponent(collider);
 	PhysicsManager::getInstance()->trackObject(collider);
+}
+
+void Floor::setSpawnPosition(float x, float y)
+{
+	this->setPosition(x, y);
+}
+
+void Floor::onRelease()
+{
+
+}
+
+void Floor::onActivate()
+{
+	sf::Vector2f dest = FloorManager::getInstance()->getDestination();
+	this->setPosition(dest.x, dest.y);
+}
+
+APoolable* Floor::clone()
+{
+	APoolable* copyObj = new Floor(this->name);
+	return copyObj;
 }
 
 void Floor::onCollisionEnter(AGameObject* object)

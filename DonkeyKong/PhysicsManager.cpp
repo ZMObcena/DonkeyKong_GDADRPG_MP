@@ -47,20 +47,21 @@ void PhysicsManager::perform()
 						this->trackedObjects[j]->onCollisionEnter(this->trackedObjects[i]->getOwner());
 					}
 				}
-			}
-			else
-			{
-				if (this->trackedObjects[i]->hasCollisionWith(this->trackedObjects[j]))
+				else
 				{
-					this->trackedObjects[i]->onCollisionExit(this->trackedObjects[j]->getOwner());
-					this->trackedObjects[i]->removeCollision(this->trackedObjects[j]);
-				}
-				if (this->trackedObjects[j]->hasCollisionWith(this->trackedObjects[i]))
-				{
-					this->trackedObjects[j]->onCollisionExit(this->trackedObjects[i]->getOwner());
-					this->trackedObjects[j]->removeCollision(this->trackedObjects[i]);
+					if (this->trackedObjects[i]->hasCollisionWith(this->trackedObjects[j]))
+					{
+						this->trackedObjects[i]->onCollisionExit(this->trackedObjects[j]->getOwner());
+						this->trackedObjects[i]->removeCollision(this->trackedObjects[j]);
+					}
+					if (this->trackedObjects[j]->hasCollisionWith(this->trackedObjects[i]))
+					{
+						this->trackedObjects[j]->onCollisionExit(this->trackedObjects[i]->getOwner());
+						this->trackedObjects[j]->removeCollision(this->trackedObjects[i]);
+					}
 				}
 			}
+
 		}
 	}
 

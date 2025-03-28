@@ -37,9 +37,9 @@ bool GameObjectPool::hasObjectAvailable(int requestSize)
 
 APoolable* GameObjectPool::requestPoolable() {
     if (this->hasObjectAvailable(1)) {
-        APoolable* pPoolableObject = this->availableObjects[0];
+        APoolable* pPoolableObject = this->availableObjects[this->availableObjects.size() - 1];
+        this->availableObjects.erase(this->availableObjects.begin() + this->availableObjects.size() - 1);
         this->usedObjects.push_back(pPoolableObject);
-        this->availableObjects.erase(this->availableObjects.begin());
         this->setEnabled(pPoolableObject, true);
         return pPoolableObject;
     }
@@ -78,11 +78,16 @@ void GameObjectPool::releasePoolable(APoolable* pPoolableObject) {
 }
 
 void GameObjectPool::setEnabled(APoolable* pPoolableObject, bool bEnabled) {
-    pPoolableObject->setEnabled(bEnabled);
     if (bEnabled)
+    {
+        pPoolableObject->setEnabled(true);
         pPoolableObject->onActivate();
+    }
     else
+    {
+        pPoolableObject->setEnabled(false);
         pPoolableObject->onRelease();
+    }
 }
 
 std::string GameObjectPool::getTag() {

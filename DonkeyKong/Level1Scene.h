@@ -13,5 +13,9 @@ public:
 	void onLoadObjects();
 
 	void onUnloadResources();
+	sf::Vector2f getDestination();
+
+private:
+	sf::Vector2f dest;
 };
 
