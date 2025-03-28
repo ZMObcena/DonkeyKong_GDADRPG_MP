@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:FloorHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Level1Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Level1Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:FloorManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FloorManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\PlayerMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:PlayerMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -88,6 +104,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Media\\Atlas\\Mario_Atlas.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Media\\Atlas\\Mario_Atlas.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FloorHandler.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -97,7 +117,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -106,6 +126,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Level1Scene.cpp",
+              "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Level1Scene.cpp",
+              "RelativeDocumentMoniker": "Level1Scene.cpp",
+              "ToolTip": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Level1Scene.cpp",
+              "RelativeToolTip": "Level1Scene.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-28T11:20:47.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FloorManager.h",
+              "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorManager.h",
+              "RelativeDocumentMoniker": "FloorManager.h",
+              "ToolTip": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorManager.h",
+              "RelativeToolTip": "FloorManager.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-28T11:19:35.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FloorManager.cpp",
+              "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorManager.cpp",
+              "RelativeDocumentMoniker": "FloorManager.cpp",
+              "ToolTip": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorManager.cpp",
+              "RelativeToolTip": "FloorManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-28T11:19:32.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FloorHandler.h",
+              "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorHandler.h",
+              "RelativeDocumentMoniker": "FloorHandler.h",
+              "ToolTip": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorHandler.h",
+              "RelativeToolTip": "FloorHandler.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-28T11:19:29.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FloorHandler.cpp",
+              "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorHandler.cpp",
+              "RelativeDocumentMoniker": "FloorHandler.cpp",
+              "ToolTip": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\FloorHandler.cpp",
+              "RelativeToolTip": "FloorHandler.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-28T11:19:25.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
@@ -113,12 +197,11 @@
               "RelativeToolTip": "Player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T19:16:57.775Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T19:16:57.775Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "TextureManager.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\OLD FILES\\MP\\Lethal Company\\Controller\\Manager\\TextureManager.cpp",
               "RelativeDocumentMoniker": "..\\..\\OLD FILES\\MP\\Lethal Company\\Controller\\Manager\\TextureManager.cpp",
@@ -126,12 +209,11 @@
               "RelativeToolTip": "..\\..\\OLD FILES\\MP\\Lethal Company\\Controller\\Manager\\TextureManager.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T18:47:04.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T18:47:04.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "AGameObject.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\AGameObject.cpp",
               "RelativeDocumentMoniker": "AGameObject.cpp",
@@ -139,25 +221,24 @@
               "RelativeToolTip": "AGameObject.cpp",
               "ViewState": "AgIAABAAAAAAAAAAAAAawCMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T18:40:14.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T18:40:14.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "PlayerMovement.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\PlayerMovement.cpp",
               "RelativeDocumentMoniker": "PlayerMovement.cpp",
               "ToolTip": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\PlayerMovement.cpp",
               "RelativeToolTip": "PlayerMovement.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvxgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAADwvxgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-26T18:38:45.169Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Player.cpp",
               "RelativeDocumentMoniker": "Player.cpp",
@@ -165,12 +246,11 @@
               "RelativeToolTip": "Player.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T16:28:05.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T16:28:05.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "PlayerInputController.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\PlayerInputController.cpp",
               "RelativeDocumentMoniker": "PlayerInputController.cpp",
@@ -178,12 +258,11 @@
               "RelativeToolTip": "PlayerInputController.cpp",
               "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T18:26:19.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T18:26:19.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Game.cpp",
               "RelativeDocumentMoniker": "Game.cpp",
@@ -191,12 +270,11 @@
               "RelativeToolTip": "Game.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T17:11:28.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T17:11:28.78Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\OLD FILES\\MP\\Lethal Company\\Controller\\Game.cpp",
               "RelativeDocumentMoniker": "..\\..\\OLD FILES\\MP\\Lethal Company\\Controller\\Game.cpp",
@@ -204,12 +282,11 @@
               "RelativeToolTip": "..\\..\\OLD FILES\\MP\\Lethal Company\\Controller\\Game.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T19:02:59.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T19:02:59.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "AGameObject.h",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\AGameObject.h",
               "RelativeDocumentMoniker": "AGameObject.h",
@@ -217,12 +294,11 @@
               "RelativeToolTip": "AGameObject.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T02:38:00.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T02:38:00.186Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Shovel.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\OLD FILES\\MP\\Lethal Company\\Model\\Entity\\Shovel.cpp",
               "RelativeDocumentMoniker": "..\\..\\OLD FILES\\MP\\Lethal Company\\Model\\Entity\\Shovel.cpp",
@@ -230,12 +306,11 @@
               "RelativeToolTip": "..\\..\\OLD FILES\\MP\\Lethal Company\\Model\\Entity\\Shovel.cpp",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T18:49:27.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T18:49:27.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "MainMenuScene.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\OLD FILES\\MP\\Lethal Company\\Model\\Scene\\MainMenuScene.cpp",
               "RelativeDocumentMoniker": "..\\..\\OLD FILES\\MP\\Lethal Company\\Model\\Scene\\MainMenuScene.cpp",
@@ -243,12 +318,11 @@
               "RelativeToolTip": "..\\..\\OLD FILES\\MP\\Lethal Company\\Model\\Scene\\MainMenuScene.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T18:49:51.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T18:49:51.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "BGObject.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\BGObject.cpp",
               "RelativeDocumentMoniker": "BGObject.cpp",
@@ -256,12 +330,11 @@
               "RelativeToolTip": "BGObject.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T18:12:41.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T18:12:41.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "UIText.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\UIText.cpp",
               "RelativeDocumentMoniker": "UIText.cpp",
@@ -269,12 +342,11 @@
               "RelativeToolTip": "UIText.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T08:57:04.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T08:57:04.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "Mario_Atlas.json",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Media\\Atlas\\Mario_Atlas.json",
               "RelativeDocumentMoniker": "Media\\Atlas\\Mario_Atlas.json",
@@ -282,12 +354,11 @@
               "RelativeToolTip": "Media\\Atlas\\Mario_Atlas.json",
               "ViewState": "AgIAADYAAAAAAAAAAAAowFwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-26T16:52:27.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T16:52:27.152Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "UIButton.h",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\UIButton.h",
               "RelativeDocumentMoniker": "UIButton.h",
@@ -295,12 +366,11 @@
               "RelativeToolTip": "UIButton.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T13:40:55.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T13:40:55.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "UIText.h",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\UIText.h",
               "RelativeDocumentMoniker": "UIText.h",
@@ -308,12 +378,11 @@
               "RelativeToolTip": "UIText.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T08:54:45.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T08:54:45.166Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "UIManager.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\UIManager.cpp",
               "RelativeDocumentMoniker": "UIManager.cpp",
@@ -321,12 +390,11 @@
               "RelativeToolTip": "UIManager.cpp",
               "ViewState": "AgIAAAcAAAAAAAAAAAAuwBsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T06:36:58.143Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T06:36:58.143Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "UIManager.h",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\UIManager.h",
               "RelativeDocumentMoniker": "UIManager.h",
@@ -334,12 +402,11 @@
               "RelativeToolTip": "UIManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T06:33:12.181Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T06:33:12.181Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "UIData.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\UIData.cpp",
               "RelativeDocumentMoniker": "UIData.cpp",
@@ -347,12 +414,11 @@
               "RelativeToolTip": "UIData.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T06:28:04.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T06:28:04.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "UIData.h",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\UIData.h",
               "RelativeDocumentMoniker": "UIData.h",
@@ -360,12 +426,11 @@
               "RelativeToolTip": "UIData.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T06:24:08.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T06:24:08.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "GameObject.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\OLD FILES\\MP\\Lethal Company\\Model\\GameObject.cpp",
               "RelativeDocumentMoniker": "..\\..\\OLD FILES\\MP\\Lethal Company\\Model\\GameObject.cpp",
@@ -373,12 +438,11 @@
               "RelativeToolTip": "..\\..\\OLD FILES\\MP\\Lethal Company\\Model\\GameObject.cpp",
               "ViewState": "AgIAALgAAAAAAAAAAABBwLoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-26T13:44:37.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T13:44:37.645Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "SceneManager.h",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\SceneManager.h",
               "RelativeDocumentMoniker": "SceneManager.h",
@@ -386,12 +450,11 @@
               "RelativeToolTip": "SceneManager.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T05:41:18.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T05:41:18.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "MainMenuScreen.h",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\MainMenuScreen.h",
               "RelativeDocumentMoniker": "MainMenuScreen.h",
@@ -399,8 +462,7 @@
               "RelativeToolTip": "MainMenuScreen.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-26T13:41:48.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T13:41:48.015Z"
             }
           ]
         }

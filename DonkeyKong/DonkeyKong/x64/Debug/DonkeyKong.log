@@ -1,14 +1,32 @@
-﻿  Floor.cpp
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(19,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(19,53): warning C4244:         with
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(19,53): warning C4244:         [
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(19,53): warning C4244:             T=unsigned int
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(19,53): warning C4244:         ]
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(19,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(19,34): warning C4244:         with
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(19,34): warning C4244:         [
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(19,34): warning C4244:             T=unsigned int
-C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(19,34): warning C4244:         ]
+﻿  AComponent.cpp
+  AGameObject.cpp
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\AGameObject.cpp(248,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  APoolable.cpp
+  ApplicationManager.cpp
+  AScene.cpp
+  Collider.cpp
+  EmptyGameObject.cpp
+  Floor.cpp
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(21,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(21,53): warning C4244:         with
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(21,53): warning C4244:         [
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(21,53): warning C4244:             T=unsigned int
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(21,53): warning C4244:         ]
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(21,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(21,34): warning C4244:         with
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(21,34): warning C4244:         [
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(21,34): warning C4244:             T=unsigned int
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Floor.cpp(21,34): warning C4244:         ]
+  FloorHandler.cpp
+  FloorManager.cpp
+  FontManager.cpp
+  GameObjectPool.cpp
+  Level1Scene.cpp
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Level1Scene.cpp(42,11): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  MainMenuScene.cpp
+  MainMenuScreen.cpp
+  ObjectPoolHolder.cpp
+  PhysicsManager.cpp
   Player.cpp
 C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Player.cpp(19,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
 C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Player.cpp(19,53): warning C4244:         with
@@ -20,5 +38,59 @@ C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKon
 C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Player.cpp(19,34): warning C4244:         [
 C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Player.cpp(19,34): warning C4244:             T=unsigned int
 C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Player.cpp(19,34): warning C4244:         ]
+  BGObject.cpp
+  Entity.cpp
+  Generating Code...
+  Compiling...
+  Game.cpp
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\Game.cpp(58,3): warning C4065: switch statement contains 'default' but no 'case' labels
+  GameObjectManager.cpp
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\GameObjectManager.cpp(24,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  GenericInputController.cpp
+  Main.cpp
+  PlayerInputController.cpp
+  PlayerMovement.cpp
+  Renderer.cpp
+  SceneManager.cpp
+  SpriteRenderer.cpp
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\SpriteRenderer.cpp(9,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\SpriteRenderer.cpp(9,53): warning C4244:         with
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\SpriteRenderer.cpp(9,53): warning C4244:         [
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\SpriteRenderer.cpp(9,53): warning C4244:             T=unsigned int
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\SpriteRenderer.cpp(9,53): warning C4244:         ]
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\SpriteRenderer.cpp(9,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\SpriteRenderer.cpp(9,34): warning C4244:         with
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\SpriteRenderer.cpp(9,34): warning C4244:         [
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\SpriteRenderer.cpp(9,34): warning C4244:             T=unsigned int
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\SpriteRenderer.cpp(9,34): warning C4244:         ]
+  TextureManager.cpp
+  UIButton.cpp
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:         with
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:         [
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:             T=unsigned int
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:         ]
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:         with
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:         [
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:             T=unsigned int
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:         ]
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButton.cpp(53,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  UIButtonInputController.cpp
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButtonInputController.cpp(28,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButtonInputController.cpp(28,63): warning C4244:         with
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButtonInputController.cpp(28,63): warning C4244:         [
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButtonInputController.cpp(28,63): warning C4244:             T=float
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButtonInputController.cpp(28,63): warning C4244:         ]
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButtonInputController.cpp(28,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButtonInputController.cpp(28,42): warning C4244:         with
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButtonInputController.cpp(28,42): warning C4244:         [
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButtonInputController.cpp(28,42): warning C4244:             T=float
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIButtonInputController.cpp(28,42): warning C4244:         ]
+  UIData.cpp
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIData.cpp(20,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\UIData.cpp(39,30): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  UIManager.cpp
+  UIText.cpp
   Generating Code...
   DonkeyKong.vcxproj -> C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\x64\Debug\DonkeyKong.exe
