@@ -19,6 +19,8 @@ void Player::initialize()
 	sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
 	sprite->setTextureRect(TextureManager::getInstance()->getSpriteRect("Mario", 7));
 	sprite->setScale(3.0f, 3.0f);
+	sf::FloatRect bounds = sprite->getLocalBounds();
+	sprite->setOrigin(bounds.width / 2, bounds.height / 2);
 
 	PlayerInputController* input = new PlayerInputController(this->name + " Input");
 	this->attachComponent(input);

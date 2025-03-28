@@ -16,5 +16,6 @@ private:
 	float jumpDirection = 0.0f;
 	const float gravity = 980.0f; // Gravity acceleration
 	const float jumpStrength = -350.0f; // Upward force when jumping
+
 };
 

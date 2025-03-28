@@ -21,7 +21,12 @@ void TextureManager::unloadAll() {}
 void TextureManager::loadAll()
 {
     loadTextureAndSpriteSheet("Mario", "Media/Atlas/Mario_Atlas.png", "Media/Atlas/Mario_Atlas.json");
+    loadTextureAndSpriteSheet("DonkeyKong", "Media/Atlas/DK_Atlas.png", "Media/Atlas/DK_Atlas.json");
+    loadTextureAndSpriteSheet("Barrel", "Media/Atlas/Barrel_Atlas.png", "Media/Atlas/Barrel_Atlas.json");
+    loadTextureAndSpriteSheet("Fire", "Media/Atlas/Fire_Atlas.png", "Media/Atlas/Fire_Atlas.json");
+
     loadTexture("Floor", "Media/Sprites/Floor.png");
+    loadTexture("Lives", "Media/Sprites/Walk2.png");
 }
 
 void TextureManager::loadMainMenu()

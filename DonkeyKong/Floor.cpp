@@ -20,7 +20,8 @@ void Floor::initialize()
 	sf::Vector2u textureSize = sprite->getTexture()->getSize();
 	sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
 	sprite->setScale(65.f, 2.f);
-	//sprite->setPosition(1920 / 2, 500);
+	sf::FloatRect bounds = sprite->getLocalBounds();
+	sprite->setOrigin(bounds.width / 2, bounds.height / 2);
 
 	Renderer* renderer = new Renderer(this->name + " Renderer");
 	renderer->assignDrawable(sprite);

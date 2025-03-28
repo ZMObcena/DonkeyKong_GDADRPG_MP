@@ -7,9 +7,11 @@
 #include "GameObjectPool.h"
 #include "ObjectPoolHolder.h"
 #include "Player.h"
+#include "DonkeyKong.h"
 #include "Floor.h"
 #include "FloorHandler.h"
 #include "FloorManager.h"
+#include "GameScreen.h"
 
 
 Level1Scene::Level1Scene() : AScene("Level1Scene") {}
@@ -33,9 +35,16 @@ void Level1Scene::onLoadObjects()
 
 	GameObjectPool* floorPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::FLOOR_POOL_TAG);
 
+	GameScreen* ui = new GameScreen("GameScreen");
+	this->registerObject(ui);
+	
 	Player* player = new Player("Player");
 	this->registerObject(player);
-	player->getTransformable()->setPosition(1920 / 2, 1050);
+	player->getTransformable()->setPosition(630, 950);	
+	
+	DonkeyKong* dk = new DonkeyKong("DonkeyKong");
+	this->registerObject(dk);
+	dk->getTransformable()->setPosition(630, 215);
 
 	for (int i = 0; i < 5; ++i)
 	{

@@ -24,16 +24,11 @@ public:
 	bool isOnFloor();
 	bool isOnLadder();
 
+	bool facingRight = false;
+
 private:
 	float fPlayerSpeed = 250.f;
-	bool onFloor;
-	bool onLadder;
-	AGameObject* object;
-
-protected:
-	sf::Transformable transformable;
-	std::string name;
-	sf::Sprite* sprite;
-	sf::Texture* texture;
+	bool onFloor = false;
+	bool onLadder = false;
 };
 
