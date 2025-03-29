@@ -27,6 +27,7 @@ void TextureManager::loadAll()
 
     loadTexture("Floor", "Media/Sprites/Floor.png");
     loadTexture("Lives", "Media/Sprites/Walk2.png");
+    loadTexture("Hammer", "Media/Sprites/Hammer.png");
 }
 
 void TextureManager::loadMainMenu()

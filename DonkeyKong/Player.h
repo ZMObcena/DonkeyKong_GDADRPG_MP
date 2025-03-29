@@ -23,12 +23,14 @@ public:
 	
 	bool isOnFloor();
 	bool isOnLadder();
-
+	bool isUsingHammer();
+	void setUsingHammer(bool hammer);
 	bool facingRight = false;
 
 private:
 	float fPlayerSpeed = 250.f;
 	bool onFloor = false;
 	bool onLadder = false;
+	bool isHammer = false;
 };
 

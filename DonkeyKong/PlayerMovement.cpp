@@ -12,117 +12,148 @@ void PlayerMovement::perform()
     sf::Transformable* trans = player->getTransformable();
 
     sf::Vector2f offset(0.0f, 0.0f);
-
     float fSpeed = player->getSpeed();
     float fOffset = fSpeed * this->deltaTime.asSeconds();
 
     bool isGrounded = player->isOnFloor();
     bool isOnLadder = player->isOnLadder();
+    bool isUsingHammer = player->isUsingHammer();
 
     static int frameIndex = 7; // Default idle frame
     static float animationTimer = 0.0f;
+    static float hammerTimer = 0.0f;
     const float animationSpeed = 0.08f;
-    static int animationStep = 0; // Controls animation sequence
+    static int animationStep = 0;
+    static sf::Vector2f previousSize(0.0f, 0.0f);
 
-    sf::FloatRect bounds = player->getSprite()->getLocalBounds();
-    player->getSprite()->setOrigin(bounds.width / 2, bounds.height / 2);
+    if (isUsingHammer)
+    {
+        hammerTimer += this->deltaTime.asSeconds();
+        if (hammerTimer >= 10.0f)
+        {
+            player->setUsingHammer(false);
+            hammerTimer = 0.0f;
+        }
+    }
+
+    sf::IntRect spriteRect = TextureManager::getInstance()->getSpriteRect("Mario", frameIndex);
+    //sf::Vector2f currentSize(spriteRect.width, spriteRect.height);
+    sf::FloatRect bounds(spriteRect);
+    sf::Vector2f spriteOrigin(bounds.width / 2, bounds.height / 2);
+
+    if (frameIndex == 2)
+    {
+        spriteOrigin.x -= 20.0f; // Shift sprite slightly right
+        spriteOrigin.y += 1.0f; // Shift sprite slightly down
+    }
 
     if (isGrounded)
     {
         isJumping = false;
-        velocityY = 0.0f; // Reset vertical velocity when on ground
+        velocityY = 0.0f;
         jumpDirection = 0.0f;
     }
 
-    // Ladder Movement
-    if (input->isUp() && isOnLadder)
-    {
-        trans->move(0.0f, -fOffset);
-    }
-    if (input->isDown() && isOnLadder)
-    {
-        trans->move(0.0f, fOffset);
-    }
-
-    // Horizontal Movement (Maintain jump direction mid-air)
     bool movingHorizontally = false;
 
-    if (!isJumping)
+    if (!isJumping || isUsingHammer)
     {
         if (input->isLeft())
         {
             trans->move(-fOffset, 0.0f);
-            jumpDirection = -fOffset; // Store direction
+            jumpDirection = -fOffset;
             movingHorizontally = true;
 
             animationTimer += this->deltaTime.asSeconds();
             if (animationTimer >= animationSpeed)
             {
-                int frames[] = { 7, 8, 9, 8 };
-                frameIndex = frames[animationStep];
-                animationStep = (animationStep + 1) % 4;
-                animationTimer = 0.0f;
+                if (isUsingHammer)
+                {
+                    int frames[] = { 3, 6 };
+                    frameIndex = frames[animationStep];
+                    animationStep = (animationStep + 1) % 2;
+                    animationTimer = 0.0f;
+                }
+                else
+                {
+                    int frames[] = { 7, 8, 9 };
+                    frameIndex = frames[animationStep];
+                    animationStep = (animationStep + 1) % 3;
+                    animationTimer = 0.0f;
+                }
             }
 
             if (player->facingRight)
             {
                 player->facingRight = false;
-                trans->move(-bounds.width, 0.0f); // Adjust position when flipping
+                trans->move(-bounds.width, 0.0f);
             }
-            player->getSprite()->setScale(3.0f, 3.0f); // Flip sprite left
+            player->getSprite()->setScale(3.0f, 3.0f);
         }
         else if (input->isRight())
         {
             trans->move(fOffset, 0.0f);
-            jumpDirection = fOffset; // Store direction
+            jumpDirection = fOffset;
             movingHorizontally = true;
 
             animationTimer += this->deltaTime.asSeconds();
             if (animationTimer >= animationSpeed)
             {
-                int frames[] = { 7, 8, 9, 8 };
-                frameIndex = frames[animationStep];
-                animationStep = (animationStep + 1) % 4;
-                animationTimer = 0.0f;
+                if (isUsingHammer)
+                {
+                    int frames[] = { 3, 6 };
+                    frameIndex = frames[animationStep];
+                    animationStep = (animationStep + 1) % 2;
+                    animationTimer = 0.0f;
+                }
+                else
+                {
+                    int frames[] = { 7, 8, 9 };
+                    frameIndex = frames[animationStep];
+                    animationStep = (animationStep + 1) % 3;
+                    animationTimer = 0.0f;
+                }
             }
 
             if (!player->facingRight)
             {
                 player->facingRight = true;
-                trans->move(bounds.width, 0.0f); // Adjust position when flipping
+                trans->move(bounds.width, 0.0f);
             }
-            player->getSprite()->setScale(-3.0f, 3.0f); // Flip
+            player->getSprite()->setScale(-3.0f, 3.0f);
         }
 
         if (!movingHorizontally)
         {
-            frameIndex = 7; // Idle frame
-            animationStep = 0; // Reset animation cycle
+            if (isUsingHammer)
+            {
+                frameIndex = 3;
+            }
+            else
+            {
+                frameIndex = 7;
+                animationStep = 0;
+            }
         }
     }
-    else // If jumping, maintain direction
+    else
     {
         trans->move(jumpDirection, 0.0f);
-        frameIndex = 9; // Jump frame
+        frameIndex = 9;
     }
 
-    // Jumping Logic
-    if (input->isJumping() && isGrounded && !isOnLadder)
+    if (input->isJumping() && isGrounded && !isOnLadder && !isUsingHammer)
     {
         isJumping = true;
         velocityY = jumpStrength;
-        frameIndex = 9; // Set jump frame
+        frameIndex = 9;
     }
 
-    // Apply Gravity
-    if (!isGrounded || isJumping && !isOnLadder)
+    if ((!isGrounded || isJumping) && !isOnLadder && !isUsingHammer)
     {
         velocityY += gravity * this->deltaTime.asSeconds();
         trans->move(0.0f, velocityY * this->deltaTime.asSeconds());
     }
 
-    // Update Sprite Animation
     player->getSprite()->setTextureRect(TextureManager::getInstance()->getSpriteRect("Mario", frameIndex));
 }
-
-

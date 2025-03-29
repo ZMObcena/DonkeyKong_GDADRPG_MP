@@ -11,6 +11,7 @@ public:
 	static const std::string BARREL_POOL_TAG;
 	static const std::string FLOOR_POOL_TAG;
 	static const std::string FIRE_POOL_TAG;
+	static const std::string HAMMER_POOL_TAG;
 
 	static ObjectPoolHolder* getInstance();
 

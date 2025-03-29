@@ -58,6 +58,11 @@ void Player::onCollisionEnter(AGameObject* object)
 	if (object->getName() == "Barrel")
 	{
 
+	}	
+	
+	if (object->getName() == "Hammer")
+	{
+		this->isHammer = true;
 	}
 
 	std::cout << "Player entered " + object->getName() << std::endl;
@@ -87,5 +92,9 @@ void Player::onCollisionExit(AGameObject* object)
 bool Player::isOnFloor() { return this->onFloor; }
 
 bool Player::isOnLadder() { return this->onLadder; }
+
+bool Player::isUsingHammer() { return this->isHammer; }
+
+void Player::setUsingHammer(bool hammer) { this->isHammer = hammer; }
 
 float Player::getSpeed() { return this->fPlayerSpeed; }
