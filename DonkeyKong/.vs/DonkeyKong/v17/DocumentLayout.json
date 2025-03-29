@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\DonkeyKongMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:DonkeyKongMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\BarrelMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:BarrelMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Level1Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Level1Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\BarrelMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:BarrelMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\BarrelMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:BarrelMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\PlayerMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:PlayerMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Barrel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Barrel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Level1Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Level1Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,20 +50,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "BarrelMovement.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\BarrelMovement.cpp",
               "RelativeDocumentMoniker": "BarrelMovement.cpp",
               "ToolTip": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\BarrelMovement.cpp",
               "RelativeToolTip": "BarrelMovement.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAACYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-29T05:35:47.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "BarrelMovement.h",
+              "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\BarrelMovement.h",
+              "RelativeDocumentMoniker": "BarrelMovement.h",
+              "ToolTip": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\BarrelMovement.h",
+              "RelativeToolTip": "BarrelMovement.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-29T05:35:57.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Barrel.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Barrel.cpp",
               "RelativeDocumentMoniker": "Barrel.cpp",
@@ -75,12 +84,11 @@
               "RelativeToolTip": "Barrel.cpp",
               "ViewState": "AgIAAEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-29T05:34:20.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T05:34:20.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PlayerMovement.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\PlayerMovement.cpp",
               "RelativeDocumentMoniker": "PlayerMovement.cpp",
@@ -88,8 +96,7 @@
               "RelativeToolTip": "PlayerMovement.cpp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-29T03:45:03.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T03:45:03.24Z"
             },
             {
               "$type": "Document",
@@ -101,12 +108,11 @@
               "RelativeToolTip": "Barrel.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-29T05:34:21.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T05:34:21.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Game.cpp",
               "RelativeDocumentMoniker": "Game.cpp",
@@ -119,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Level1Scene.cpp",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\Level1Scene.cpp",
               "RelativeDocumentMoniker": "Level1Scene.cpp",
@@ -132,33 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DonkeyKongMovement.cpp",
-              "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\DonkeyKongMovement.cpp",
-              "RelativeDocumentMoniker": "DonkeyKongMovement.cpp",
-              "ToolTip": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\DonkeyKongMovement.cpp",
-              "RelativeToolTip": "DonkeyKongMovement.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-29T05:31:09.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BarrelMovement.h",
-              "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\BarrelMovement.h",
-              "RelativeDocumentMoniker": "BarrelMovement.h",
-              "ToolTip": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\BarrelMovement.h",
-              "RelativeToolTip": "BarrelMovement.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-29T05:35:57.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PlayerMovement.h",
               "DocumentMoniker": "C:\\Users\\zmobc\\OneDrive\\Documents\\AAASchool\\4th Year\\Term 2\\GDADPRG\\MP\\DonkeyKong\\PlayerMovement.h",
               "RelativeDocumentMoniker": "PlayerMovement.h",
@@ -166,8 +146,7 @@
               "RelativeToolTip": "PlayerMovement.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-29T05:41:11.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T05:41:11.507Z"
             }
           ]
         }
