@@ -9,6 +9,8 @@ public:
 	void perform();
 
 private:
+	bool hasFallen = false;
+	int direction = 1;
 	float velocityY = 0.0f;
 	const float gravity = 100.0f; // Gravity acceleration
 };

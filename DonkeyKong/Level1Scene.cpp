@@ -52,9 +52,6 @@ void Level1Scene::onLoadObjects()
 	dk->getTransformable()->setPosition(630, 215);
 
 	GameObjectPool* floorPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::FLOOR_POOL_TAG);
-	GameObjectPool* barrelPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::BARREL_POOL_TAG);
-
-	barrelPool->requestPoolable();
 
 	for (int i = 0; i < 5; ++i)
 	{

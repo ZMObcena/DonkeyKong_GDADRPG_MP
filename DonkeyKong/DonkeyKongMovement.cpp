@@ -1,5 +1,6 @@
 #include "DonkeyKongMovement.h"
 #include "DonkeyKong.h"
+#include "ObjectPoolHolder.h"
 
 DonkeyKongMovement::DonkeyKongMovement(std::string name) : AComponent(name, Script)
 {
@@ -12,7 +13,7 @@ void DonkeyKongMovement::perform()
     static int frameIndex = 0;
     static float animationTimer = 0.0f;
     static float attackTimer = 0.0f;
-    static float nextAttackTime = (rand() % 2 + 1.5f); // Random interval between 1.5 to 3 seconds
+    static float nextAttackTime = (rand() % 3 + 1.f); // Random interval between 1 to 3 seconds
     const float animationSpeed = 0.18f;
     static bool isAttacking = false;
     static int attackStep = 0;
@@ -31,11 +32,13 @@ void DonkeyKongMovement::perform()
 
             if (attackStep >= 4) // End attack sequence
             {
+                GameObjectPool* barrelPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::BARREL_POOL_TAG);
+                barrelPool->requestPoolable();
                 isAttacking = false;
                 attackStep = 0;
                 frameIndex = 0; // Return to idle
                 attackTimer = 0.0f;
-                nextAttackTime = (rand() % 2 + 1.5f); // Reset attack timer
+                nextAttackTime = (rand() % 3 + 1.f); // Reset attack timer
             }
         }
     }

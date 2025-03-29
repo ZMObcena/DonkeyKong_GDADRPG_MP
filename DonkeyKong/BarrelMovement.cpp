@@ -11,9 +11,6 @@ void BarrelMovement::perform()
     Barrel* barrel = (Barrel*)this->getOwner();
     sf::Transformable* trans = barrel->getTransformable();
 
-    static bool hasFallen = false;
-    static int direction = 1; // Starts moving right
-
     bool isGrounded = barrel->isOnFloor();
     float moveSpeed = barrel->getSpeed() * this->deltaTime.asSeconds();
 

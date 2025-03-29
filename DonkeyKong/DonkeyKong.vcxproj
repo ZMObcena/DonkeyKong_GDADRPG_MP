@@ -147,6 +147,8 @@
     <ClCompile Include="DonkeyKong.cpp" />
     <ClCompile Include="DonkeyKongMovement.cpp" />
     <ClCompile Include="EmptyGameObject.cpp" />
+    <ClCompile Include="Fire.cpp" />
+    <ClCompile Include="FireMovement.cpp" />
     <ClCompile Include="Floor.cpp" />
     <ClCompile Include="FloorHandler.cpp" />
     <ClCompile Include="FloorManager.cpp" />
@@ -192,6 +194,8 @@
     <ClInclude Include="DonkeyKong.h" />
     <ClInclude Include="DonkeyKongMovement.h" />
     <ClInclude Include="EmptyGameObject.h" />
+    <ClInclude Include="Fire.h" />
+    <ClInclude Include="FireMovement.h" />
     <ClInclude Include="Floor.h" />
     <ClInclude Include="FloorHandler.h" />
     <ClInclude Include="FloorManager.h" />

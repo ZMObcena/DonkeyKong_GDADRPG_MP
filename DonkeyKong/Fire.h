@@ -1,0 +1,30 @@
+#pragma once
+
+#include "APoolable.h"
+#include "CollisionListener.h"
+#include "Collider.h"
+
+class Fire : public APoolable, CollisionListener
+{
+public:
+	Fire(std::string name);
+	~Fire();
+
+	void initialize();
+	void setSpawnPosition(float x, float y);
+	void onRelease();
+	void onActivate();
+	APoolable* clone();
+
+	void onCollisionEnter(AGameObject* object);
+	void onCollisionExit(AGameObject* object);
+
+	bool isOnFloor();
+	float getSpeed();
+
+private:
+	Collider* collider;
+	bool onFloor;
+	const float fireSpeed = 20.0f;
+};
+
