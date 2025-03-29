@@ -61,7 +61,6 @@ void PhysicsManager::perform()
 					}
 				}
 			}
-
 		}
 	}
 

@@ -2,6 +2,7 @@
 
 const std::string ObjectPoolHolder::BARREL_POOL_TAG = "BarrelPool";
 const std::string ObjectPoolHolder::FLOOR_POOL_TAG = "FloorPool";
+const std::string ObjectPoolHolder::FIRE_POOL_TAG = "FirePool";
 
 ObjectPoolHolder* ObjectPoolHolder::sharedInstance = nullptr;
 

@@ -36,8 +36,8 @@ void Player::initialize()
 	collider->setOffset(sprite->getGlobalBounds());
 	collider->assignListener(this);
 	this->attachComponent(collider);
-	PhysicsManager::getInstance()->trackObject(collider);
 
+	PhysicsManager::getInstance()->trackObject(collider);
 
 	//Renderer* renderer = Renderer::CreateSprite("Player", "Mario");
 	//this->attachComponent(renderer);
@@ -55,7 +55,12 @@ void Player::onCollisionEnter(AGameObject* object)
 		this->onLadder = true;
 	}
 
-	std::cout << "Player entered " + object->getName();
+	if (object->getName() == "Barrel")
+	{
+
+	}
+
+	std::cout << "Player entered " + object->getName() << std::endl;
 
 }
 
@@ -70,14 +75,17 @@ void Player::onCollisionExit(AGameObject* object)
 	{
 		this->onLadder = false;
 	}
-	std::cout << "Player exited " + object->getName();
+
+	if (object->getName() == "Barrel")
+	{
+
+	}
+
+	std::cout << "Player exited " + object->getName() << std::endl;
 }
 
 bool Player::isOnFloor() { return this->onFloor; }
 
 bool Player::isOnLadder() { return this->onLadder; }
 
-float Player::getSpeed()
-{
-	return this->fPlayerSpeed;
-}
+float Player::getSpeed() { return this->fPlayerSpeed; }

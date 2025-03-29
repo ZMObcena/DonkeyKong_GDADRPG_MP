@@ -129,6 +129,15 @@
     <ClCompile Include="GameScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Barrel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrelMovement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrelHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AComponent.h">
@@ -249,6 +258,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Barrel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrelMovement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrelHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

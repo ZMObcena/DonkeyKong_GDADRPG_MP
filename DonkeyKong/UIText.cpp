@@ -14,15 +14,15 @@ UIText::~UIText()
 
 void UIText::initialize()
 {
-	sf::Font* font = FontManager::getInstance()->getFont("default");
-	text->setFont(*font);
-	text->setFillColor(sf::Color::White);
-	text->setOutlineColor(sf::Color::Black);
-	text->setOutlineThickness(4.0f);
+	//sf::Font* font = FontManager::getInstance()->getFont("Dejavu");
+	//text->setFont(*font);
+	this->text->setFillColor(sf::Color::White);
+	this->text->setOutlineColor(sf::Color::Black);
+	this->text->setOutlineThickness(4.0f);
 	this->setSize(40);
 	this->setText("[PLACEHOLDER]");
 
-	Renderer* renderer = new Renderer("Text");
+	Renderer* renderer = new Renderer(this->name + " Renderer");
 	renderer->assignDrawable(text);
 	this->attachComponent(renderer);
 }
@@ -42,4 +42,10 @@ std::string UIText::getText()
 void UIText::setSize(unsigned int size)
 {
 	this->text->setCharacterSize(size);
+}
+
+void UIText::setFont(std::string font)
+{
+	sf::Font* fontStyle = FontManager::getInstance()->getFont(font);
+	this->text->setFont(*fontStyle);
 }

@@ -15,7 +15,8 @@ FontManager* FontManager::getInstance()
 
 void FontManager::loadAll()
 {
-	loadFont("default", "Media/Font/DejaVuSans.ttf");
+	loadFont("Dejavu", "Media/Font/DejaVuSans.ttf");
+	loadFont("Sansation", "Media/Font/Sansation.ttf");
 }
 
 sf::Font* FontManager::getFont(std::string key)

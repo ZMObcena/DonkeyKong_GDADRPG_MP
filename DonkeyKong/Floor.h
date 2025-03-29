@@ -19,11 +19,6 @@ public:
 	void onCollisionExit(AGameObject* object);
 
 private:
-
-protected:
-	sf::Transformable transformable;
-	std::string name;
-	sf::Sprite* sprite;
-	sf::Texture* texture;
+	Collider* collider;
 };
 

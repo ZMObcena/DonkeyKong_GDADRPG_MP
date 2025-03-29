@@ -9,6 +9,7 @@ public:
 	~UIText();
 	void initialize();
 	void setText(std::string text);
+	void setFont(std::string font);
 	std::string getText();
 	void setSize(unsigned int size);
 

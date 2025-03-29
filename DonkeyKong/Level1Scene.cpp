@@ -11,6 +11,7 @@
 #include "Floor.h"
 #include "FloorHandler.h"
 #include "FloorManager.h"
+#include "BarrelHandler.h"
 #include "GameScreen.h"
 
 
@@ -29,11 +30,15 @@ void Level1Scene::onLoadObjects()
 
 	holder = new EmptyGameObject("FloorManager Holder");
 	this->registerObject(holder);
+
 	FloorHandler* floorHandler = new FloorHandler(150, "FloorHandler", holder);
 	holder->attachComponent(floorHandler);
 	this->registerObject(holder);
 
-	GameObjectPool* floorPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::FLOOR_POOL_TAG);
+	holder = new EmptyGameObject("Barrel Holder");
+	BarrelHandler* barrelHandler = new BarrelHandler(30, "BarrelHandler", holder);
+	holder->attachComponent(barrelHandler);
+	this->registerObject(holder);
 
 	GameScreen* ui = new GameScreen("GameScreen");
 	this->registerObject(ui);
@@ -46,13 +51,19 @@ void Level1Scene::onLoadObjects()
 	this->registerObject(dk);
 	dk->getTransformable()->setPosition(630, 215);
 
+	GameObjectPool* floorPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::FLOOR_POOL_TAG);
+	GameObjectPool* barrelPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::BARREL_POOL_TAG);
+
+	barrelPool->requestPoolable();
+
 	for (int i = 0; i < 5; ++i)
 	{
-		float y = 1000 - (i * 180); // Start at 900 and decrease by 200 for each set
+		float y = 1000 - (i * 180); // Start at 1000 and decrease by 180 for each set
 		for (int j = 0; j < 1; ++j)
 		{
-			//float x = 150 + (j * 25); // Start at 150 and increase by 25 for each floor
-			float x = 1920 / 2;
+			// Alternates between (1920/2 + 150) and (1920/2 - 150)
+			float x = (i % 2 == 0) ? (1920 / 2 - 40) : (1920 / 2 + 40);
+
 			FloorManager::getInstance()->setDestination(x, y);
 			floorPool->requestPoolable();
 		}

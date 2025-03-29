@@ -26,6 +26,12 @@ void GameScreen::initialize()
 	this->attachChild(lives);
 	lives->setPosition(150 + offset, 100);
 	lives->getTransformable()->setScale(-2.f, 2.f);
+
+	UIText* livesText = new UIText("Lives Text");
+	this->attachChild(livesText);
+	livesText->setFont("Sansation");
+	livesText->setText("Lives: ");
+	livesText->setPosition(150 + offset, 100);
 }
 
 void GameScreen::onButtonClick(UIButton* button)

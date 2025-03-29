@@ -18,20 +18,20 @@ void Floor::initialize()
 	this->sprite = new sf::Sprite();
 	this->sprite->setTexture(*TextureManager::getInstance()->getTexture("Floor"));
 	sf::Vector2u textureSize = sprite->getTexture()->getSize();
-	sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
-	sprite->setScale(65.f, 2.f);
+	this->sprite->setOrigin(textureSize.x / 2, textureSize.y / 2);
+	this->sprite->setScale(65.f, 2.f);
 	sf::FloatRect bounds = sprite->getLocalBounds();
-	sprite->setOrigin(bounds.width / 2, bounds.height / 2);
+	this->sprite->setOrigin(bounds.width / 2, bounds.height / 2);
 
 	Renderer* renderer = new Renderer(this->name + " Renderer");
 	renderer->assignDrawable(sprite);
 	this->attachComponent(renderer);
 
-	Collider* collider = new Collider(this->name + " Collider");
+	this->collider = new Collider(this->name + " Collider");
 	collider->setOffset(sprite->getGlobalBounds());
 	collider->assignListener(this);
 	this->attachComponent(collider);
-	PhysicsManager::getInstance()->trackObject(collider);
+	//PhysicsManager::getInstance()->trackObject(collider);
 }
 
 void Floor::setSpawnPosition(float x, float y)
@@ -46,6 +46,8 @@ void Floor::onRelease()
 
 void Floor::onActivate()
 {
+	PhysicsManager::getInstance()->trackObject(collider);
+
 	sf::Vector2f dest = FloorManager::getInstance()->getDestination();
 	this->setPosition(dest.x, dest.y);
 }
@@ -58,7 +60,7 @@ APoolable* Floor::clone()
 
 void Floor::onCollisionEnter(AGameObject* object)
 {
-
+	std::cout << "Colliding with " << object->getName() << std::endl;
 }
 
 void Floor::onCollisionExit(AGameObject* object)
