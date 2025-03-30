@@ -24,7 +24,7 @@ void PlayerMovement::perform()
     static float hammerTimer = 0.0f;
     const float animationSpeed = 0.08f;
     static int animationStep = 0;
-    static sf::Vector2f previousSize(0.0f, 0.0f);
+    static bool lockedToLadder = false;
 
     if (isUsingHammer)
     {
@@ -37,7 +37,6 @@ void PlayerMovement::perform()
     }
 
     sf::IntRect spriteRect = TextureManager::getInstance()->getSpriteRect("Mario", frameIndex);
-    //sf::Vector2f currentSize(spriteRect.width, spriteRect.height);
     sf::FloatRect bounds(spriteRect);
     sf::Vector2f spriteOrigin(bounds.width / 2, bounds.height / 2);
 
@@ -51,95 +50,117 @@ void PlayerMovement::perform()
     {
         isJumping = false;
         velocityY = 0.0f;
-        jumpDirection = 0.0f;
+        jumpDirection = 0.0f; // Reset jump direction when on ground
+        lockedToLadder = false;
     }
 
-    bool movingHorizontally = false;
+    bool movingVertically = false;
 
-    if (!isJumping || isUsingHammer)
+    if (isOnLadder && !isUsingHammer)
     {
-        if (input->isLeft())
+        velocityY = 0.0f; // Stop gravity while on ladder
+        isJumping = false; // Prevent jumping
+        jumpDirection = 0.0f; // No horizontal movement when climbing
+
+        if (input->isUp() || input->isDown())
         {
-            trans->move(-fOffset, 0.0f);
-            jumpDirection = -fOffset;
-            movingHorizontally = true;
+            lockedToLadder = true;
+        }
+        if (input->isUp())
+        {
+            trans->move(0.0f, -fOffset / 2);
+            movingVertically = true;
 
             animationTimer += this->deltaTime.asSeconds();
             if (animationTimer >= animationSpeed)
             {
-                if (isUsingHammer)
-                {
-                    int frames[] = { 3, 6 };
-                    frameIndex = frames[animationStep];
-                    animationStep = (animationStep + 1) % 2;
-                    animationTimer = 0.0f;
-                }
-                else
-                {
-                    int frames[] = { 7, 8, 9 };
-                    frameIndex = frames[animationStep];
-                    animationStep = (animationStep + 1) % 3;
-                    animationTimer = 0.0f;
-                }
+                int frames[] = { 0, 1 };
+                frameIndex = frames[animationStep];
+                animationStep = (animationStep + 1) % 2;
+                animationTimer = 0.0f;
             }
-
-            if (player->facingRight)
-            {
-                player->facingRight = false;
-                trans->move(-bounds.width, 0.0f);
-            }
-            player->getSprite()->setScale(3.0f, 3.0f);
         }
-        else if (input->isRight())
+        else if (input->isDown())
         {
-            trans->move(fOffset, 0.0f);
-            jumpDirection = fOffset;
-            movingHorizontally = true;
+            trans->move(0.0f, fOffset / 2);
+            movingVertically = true;
 
             animationTimer += this->deltaTime.asSeconds();
             if (animationTimer >= animationSpeed)
             {
-                if (isUsingHammer)
-                {
-                    int frames[] = { 3, 6 };
-                    frameIndex = frames[animationStep];
-                    animationStep = (animationStep + 1) % 2;
-                    animationTimer = 0.0f;
-                }
-                else
-                {
-                    int frames[] = { 7, 8, 9 };
-                    frameIndex = frames[animationStep];
-                    animationStep = (animationStep + 1) % 3;
-                    animationTimer = 0.0f;
-                }
-            }
-
-            if (!player->facingRight)
-            {
-                player->facingRight = true;
-                trans->move(bounds.width, 0.0f);
-            }
-            player->getSprite()->setScale(-3.0f, 3.0f);
-        }
-
-        if (!movingHorizontally)
-        {
-            if (isUsingHammer)
-            {
-                frameIndex = 3;
-            }
-            else
-            {
-                frameIndex = 7;
-                animationStep = 0;
+                int frames[] = { 0, 1 };
+                frameIndex = frames[animationStep];
+                animationStep = (animationStep + 1) % 2;
+                animationTimer = 0.0f;
             }
         }
     }
-    else
+
+    if (!isOnLadder || !lockedToLadder) // Allow left and right movement only if not climbing
     {
-        trans->move(jumpDirection, 0.0f);
-        frameIndex = 9;
+        if (!isJumping || isUsingHammer)
+        {
+            if (input->isLeft())
+            {
+                trans->move(-fOffset, 0.0f);
+                jumpDirection = -fOffset;
+
+                animationTimer += this->deltaTime.asSeconds();
+                if (animationTimer >= animationSpeed)
+                {
+                    if (isUsingHammer)
+                    {
+                        int frames[] = { 3, 6 };
+                        frameIndex = frames[animationStep];
+                        animationStep = (animationStep + 1) % 2;
+                    }
+                    else
+                    {
+                        int frames[] = { 7, 8, 9 };
+                        frameIndex = frames[animationStep];
+                        animationStep = (animationStep + 1) % 3;
+                    }
+                    animationTimer = 0.0f;
+                }
+
+                if (player->facingRight)
+                {
+                    player->facingRight = false;
+                    trans->move(-bounds.width, 0.0f);
+                }
+                player->getSprite()->setScale(3.0f, 3.0f);
+            }
+            else if (input->isRight())
+            {
+                trans->move(fOffset, 0.0f);
+                jumpDirection = fOffset;
+
+                animationTimer += this->deltaTime.asSeconds();
+                if (animationTimer >= animationSpeed)
+                {
+                    if (isUsingHammer)
+                    {
+                        int frames[] = { 3, 6 };
+                        frameIndex = frames[animationStep];
+                        animationStep = (animationStep + 1) % 2;
+                    }
+                    else
+                    {
+                        int frames[] = { 7, 8, 9 };
+                        frameIndex = frames[animationStep];
+                        animationStep = (animationStep + 1) % 3;
+                    }
+                    animationTimer = 0.0f;
+                }
+
+                if (!player->facingRight)
+                {
+                    player->facingRight = true;
+                    trans->move(bounds.width, 0.0f);
+                }
+                player->getSprite()->setScale(-3.0f, 3.0f);
+            }
+        }
     }
 
     if (input->isJumping() && isGrounded && !isOnLadder && !isUsingHammer)
@@ -147,12 +168,35 @@ void PlayerMovement::perform()
         isJumping = true;
         velocityY = jumpStrength;
         frameIndex = 9;
+        if (jumpDirection == 0.0f) // Ensure vertical jump if idle
+        {
+            trans->move(0.0f, velocityY * this->deltaTime.asSeconds());
+        }
+    }
+
+    if (jumpDirection == 0.0f)
+    {
+        //animationTimer += this->deltaTime.asSeconds();
+
+        if (!isOnLadder)
+        {
+            frameIndex = 7;
+        }
+        if (isJumping)
+        {
+            frameIndex = 9;
+        }
+        if (isUsingHammer)
+        {
+            frameIndex = 3;
+        }
+
     }
 
     if ((!isGrounded || isJumping) && !isOnLadder)
     {
         velocityY += gravity * this->deltaTime.asSeconds();
-        trans->move(0.0f, velocityY * this->deltaTime.asSeconds());
+        trans->move(jumpDirection, velocityY * this->deltaTime.asSeconds());
     }
 
     player->getSprite()->setTextureRect(TextureManager::getInstance()->getSpriteRect("Mario", frameIndex));

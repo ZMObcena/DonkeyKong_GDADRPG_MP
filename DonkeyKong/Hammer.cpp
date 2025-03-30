@@ -1,7 +1,7 @@
 #include "Hammer.h"
 #include "PhysicsManager.h"
 #include "ObjectPoolHolder.h"
-#include "FloorManager.h"
+#include "SpawnManager.h"
 
 Hammer::Hammer(std::string name) : APoolable(name), CollisionListener()
 {
@@ -45,7 +45,7 @@ void Hammer::onRelease()
 
 void Hammer::onActivate()
 {
-	sf::Vector2f dest = FloorManager::getInstance()->getDestination();
+	sf::Vector2f dest = SpawnManager::getInstance()->getHammerSpawn();
 	this->setPosition(dest.x, dest.y);
 
 	PhysicsManager::getInstance()->trackObject(this->collider);

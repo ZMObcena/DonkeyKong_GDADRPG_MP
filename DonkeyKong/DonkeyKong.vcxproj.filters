@@ -114,7 +114,7 @@
     <ClCompile Include="FloorHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FloorManager.cpp">
+    <ClCompile Include="SpawnManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ObjectPoolHolder.cpp">
@@ -148,6 +148,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Border.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ladder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LadderHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaulineMovement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HammerHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -257,7 +272,7 @@
     <ClInclude Include="FloorHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FloorManager.h">
+    <ClInclude Include="SpawnManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ObjectPoolHolder.h">
@@ -291,6 +306,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Border.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ladder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LadderHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaulineMovement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HammerHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

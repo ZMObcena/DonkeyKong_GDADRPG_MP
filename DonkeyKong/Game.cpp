@@ -31,8 +31,8 @@ void Game::run()
 			timeSinceLastUpdate -= TimePerFrame;
 			this->update(TimePerFrame);
 		}
-		this->render();
 		SceneManager::getInstance()->checkLoadScene();
+		this->render();
 	}
 }
 

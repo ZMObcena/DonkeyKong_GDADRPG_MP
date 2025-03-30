@@ -4,7 +4,7 @@
 #include "BarrelMovement.h"
 #include "DonkeyKong.h"
 #include "ObjectPoolHolder.h"
-#include "FloorManager.h"
+#include "SpawnManager.h"
 
 Barrel::Barrel(std::string name) : APoolable(name), CollisionListener()
 {
@@ -52,7 +52,8 @@ void Barrel::onRelease()
 
 void Barrel::onActivate()
 {
-	this->setPosition(720, 250);
+	sf::Vector2f spawn = SpawnManager::getInstance()->getBarrelSpawn();
+	this->setPosition(spawn.x, spawn.y);
 	this->onFloor = true;
 
 	BarrelMovement* movement = (BarrelMovement*)this->findComponentByName(this->name + " Movement");

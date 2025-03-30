@@ -15,13 +15,11 @@ void Border::initialize()
 {
 	this->sprite = new sf::Sprite();
 
-	sf::RectangleShape* rectangle = new sf::RectangleShape(sf::Vector2f(2000.0f, 50.0f)); // Width 200, Height 50
+	sf::RectangleShape* rectangle = new sf::RectangleShape(sf::Vector2f(5000.0f, 50.0f)); // Width 200, Height 50
 	rectangle->setFillColor(sf::Color::White); // Set color to white
 	rectangle->setOutlineThickness(2.0f);
 	rectangle->setOutlineColor(sf::Color::Black);
 	rectangle->setOrigin(rectangle->getSize().x / 2, rectangle->getSize().y / 2);
-
-	this->setPosition(1920 / 2, 2000);
 
 	Renderer* renderer = new Renderer(this->name + " Renderer");
 	renderer->assignDrawable(rectangle);

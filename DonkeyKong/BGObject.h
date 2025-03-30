@@ -11,8 +11,6 @@ public:
 	BGObject(std::string name);
 	~BGObject();
 	void initialize();
-	
-private:
-	const float SPEED_MULTIPLIER = 100.0f;
+
 };
 

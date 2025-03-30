@@ -4,6 +4,7 @@
 #include "FireMovement.h"
 #include "GameObjectPool.h"
 #include "ObjectPoolHolder.h"
+#include "SpawnManager.h"
 
 Fire::Fire(std::string name) : APoolable(name), CollisionListener()
 {
@@ -51,6 +52,8 @@ void Fire::onRelease()
 
 void Fire::onActivate()
 {
+	sf::Vector2f spawn = SpawnManager::getInstance()->getFireSpawn();
+	this->setPosition(spawn.x, spawn.y);
 	PhysicsManager::getInstance()->trackObject(this->collider);
 }
 
@@ -79,6 +82,11 @@ void Fire::onCollisionEnter(AGameObject* object)
 		this->onFloor = true;
 	}
 
+	if (object->getName() == "Ladder")
+	{
+		this->onLadder = true;
+	}
+
 	std::cout << this->name + " entered " + object->getName() << std::endl;
 }
 
@@ -89,9 +97,16 @@ void Fire::onCollisionExit(AGameObject* object)
 		this->onFloor = false;
 	}
 
+	if (object->getName() == "Ladder")
+	{
+		this->onLadder = false;
+	}
+
 	std::cout << this->name + " exited " + object->getName() << std::endl;
 }
 
 bool Fire::isOnFloor() { return this->onFloor; }
+
+bool Fire::isOnLadder() { return this->onLadder; }
 
 float Fire::getSpeed() { return this->fireSpeed; }

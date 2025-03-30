@@ -26,6 +26,6 @@ public:
 private:
 	Collider* collider;
 	bool onFloor;
-	const float barrelSpeed = 100.0f;
+	const float barrelSpeed = 120.0f;
 };
 

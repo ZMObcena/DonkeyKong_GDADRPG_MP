@@ -7,6 +7,7 @@
 #include <iostream>
 #include <string>
 #include "UIButton.h"
+#include "LevelManager.h"
 
 MainMenuScreen::MainMenuScreen(std::string name) : AGameObject(name), ButtonListener()
 {
@@ -61,5 +62,6 @@ void MainMenuScreen::onButtonReleased(UIButton* button)
 	if (button == this->startButton)
 	{
 		SceneManager::getInstance()->loadScene(SceneManager::LEVEL_1_SCENE);
+		LevelManager::getInstance()->proceedToNextLevel(true);
 	}
 }

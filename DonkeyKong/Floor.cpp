@@ -1,7 +1,7 @@
 #include "Floor.h"
 #include "PhysicsManager.h"
 #include "Level1Scene.h"
-#include "FloorManager.h"
+#include "SpawnManager.h"
 
 Floor::Floor(std::string name) : APoolable(name), CollisionListener()
 {
@@ -24,14 +24,13 @@ void Floor::initialize()
 	this->sprite->setOrigin(bounds.width / 2, bounds.height / 2);
 
 	Renderer* renderer = new Renderer(this->name + " Renderer");
-	renderer->assignDrawable(sprite);
+	renderer->assignDrawable(this->sprite);
 	this->attachComponent(renderer);
 
 	this->collider = new Collider(this->name + " Collider");
-	collider->setOffset(sprite->getGlobalBounds());
+	collider->setOffset(this->sprite->getGlobalBounds());
 	collider->assignListener(this);
 	this->attachComponent(collider);
-	//PhysicsManager::getInstance()->trackObject(collider);
 }
 
 void Floor::setSpawnPosition(float x, float y)
@@ -46,10 +45,17 @@ void Floor::onRelease()
 
 void Floor::onActivate()
 {
-	PhysicsManager::getInstance()->trackObject(collider);
+	sf::Vector2f spawn = SpawnManager::getInstance()->getFloorSpawn();
+	this->setPosition(spawn.x, spawn.y);
 
-	sf::Vector2f dest = FloorManager::getInstance()->getDestination();
-	this->setPosition(dest.x, dest.y);
+	spawn = SpawnManager::getInstance()->getScale();
+	this->sprite->setScale(spawn.x, spawn.y);
+
+	sf::FloatRect bounds = sprite->getLocalBounds();
+	this->sprite->setOrigin(bounds.width / 2, bounds.height / 2);
+	this->collider->setOffset(this->sprite->getGlobalBounds());
+
+	PhysicsManager::getInstance()->trackObject(collider);
 }
 
 APoolable* Floor::clone()

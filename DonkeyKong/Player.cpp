@@ -3,7 +3,7 @@
 #include "SceneManager.h"
 #include "ObjectPoolHolder.h"
 #include "GameObjectPool.h"
-
+#include "LevelManager.h"
 
 Player::Player(std::string name) : AGameObject(name), CollisionListener()
 {
@@ -91,6 +91,12 @@ void Player::onCollisionEnter(AGameObject* object)
 	{
 		this->lives--;
 		this->lifeCheck(this->lives);
+	}
+
+	if (object->getName() == "Pauline")
+	{
+		LevelManager::getInstance()->setLevel(LevelManager::getInstance()->getLevel() + 1);
+
 	}
 
 	std::cout << "Player entered " + object->getName() << std::endl;

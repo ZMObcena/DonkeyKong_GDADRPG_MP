@@ -2,6 +2,9 @@
 #include "Barrel.h"
 #include "ObjectPoolHolder.h"
 #include "GameObjectPool.h"
+#include <random>
+
+
 
 BarrelMovement::BarrelMovement(std::string name) : AComponent(name, Script)
 {
@@ -13,8 +16,9 @@ void BarrelMovement::perform()
     Barrel* barrel = (Barrel*)this->getOwner();
     sf::Transformable* trans = barrel->getTransformable();
 
+
     isGrounded = barrel->isOnFloor();
-    float moveSpeed = barrel->getSpeed() * this->deltaTime.asSeconds();
+    float moveSpeed = barrel->getSpeed()  * this->deltaTime.asSeconds();
 
     animationTimer += this->deltaTime.asSeconds();
 

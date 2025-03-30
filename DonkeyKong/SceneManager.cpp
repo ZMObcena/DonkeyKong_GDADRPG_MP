@@ -2,7 +2,7 @@
 #include <iostream>
 
 std::string SceneManager::MAIN_MENU_SCENE = "MainMenuScene";
-std::string SceneManager::GAME_SCENE_NAME = "GameScene";
+std::string SceneManager::RESULTS_SCENE = "ResultsScene";
 std::string SceneManager::LEVEL_1_SCENE = "Level1Scene";
 std::string SceneManager::LEVEL_2_SCENE = "Level2Scene";
 std::string SceneManager::LEVEL_3_SCENE = "Level3Scene";

@@ -1,6 +1,11 @@
 #include "DonkeyKongMovement.h"
 #include "DonkeyKong.h"
 #include "ObjectPoolHolder.h"
+#include <random>
+
+std::random_device rdDK;
+std::mt19937 dkgen(rdDK());
+std::uniform_real_distribution<float> attackDist(0.01f, 3.f); // Adjust range as needed
 
 DonkeyKongMovement::DonkeyKongMovement(std::string name) : AComponent(name, Script)
 {
@@ -10,14 +15,17 @@ DonkeyKongMovement::DonkeyKongMovement(std::string name) : AComponent(name, Scri
 void DonkeyKongMovement::perform()
 {
     DonkeyKong* dk = (DonkeyKong*)this->getOwner();
+
     static int frameIndex = 0;
     static float animationTimer = 0.0f;
     static float attackTimer = 0.0f;
-    static float nextAttackTime = (rand() % 3 + 1.f); // Random interval between 1 to 3 seconds
-    const float animationSpeed = 0.18f;
+    static float nextAttackTime = attackDist(dkgen);
+    const float animationSpeed = 0.1f;
+    //float animationSpeed = nextAttackTime;
     static bool isAttacking = false;
     static int attackStep = 0;
     static bool hasSpawned = false;
+
     animationTimer += this->deltaTime.asSeconds();
     attackTimer += this->deltaTime.asSeconds();
 
@@ -43,7 +51,9 @@ void DonkeyKongMovement::perform()
                 attackStep = 0;
                 frameIndex = 0; // Return to idle
                 attackTimer = 0.0f;
-                nextAttackTime = (rand() % 3 + 1.f); // Reset attack timer
+                nextAttackTime = attackDist(dkgen); // Reset attack timer
+                //animationSpeed = nextAttackTime;
+                hasSpawned = false;
             }
         }
     }
@@ -59,7 +69,6 @@ void DonkeyKongMovement::perform()
         {
             frameIndex = (frameIndex == 0) ? 1 : 0; // Idle animation loop
             animationTimer = 0.0f;
-            hasSpawned = false;
         }
     }
 

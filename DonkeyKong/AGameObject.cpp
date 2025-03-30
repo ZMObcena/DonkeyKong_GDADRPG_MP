@@ -263,3 +263,7 @@ void AGameObject::setParent(AGameObject* object)
 {
 	this->parent = object;
 }
+
+sf::FloatRect AGameObject::getGlobalBounds() {
+	return this->sprite->getGlobalBounds();
+}

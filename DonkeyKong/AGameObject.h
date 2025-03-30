@@ -35,7 +35,7 @@ public:
 	sf::Transform getGlobalTransform();
 
 	AGameObject* getParent();
-
+	sf::FloatRect getGlobalBounds();
 
 protected:
 	void setParent(AGameObject* object);
