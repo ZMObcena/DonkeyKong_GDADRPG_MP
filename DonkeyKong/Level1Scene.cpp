@@ -14,7 +14,7 @@
 #include "BarrelHandler.h"
 #include "GameScreen.h"
 #include "Hammer.h"
-
+#include "Border.h"
 
 Level1Scene::Level1Scene() : AScene("Level1Scene") {}
 
@@ -25,39 +25,39 @@ void Level1Scene::onLoadResources()
 
 void Level1Scene::onLoadObjects()
 {
-	EmptyGameObject* holder = new EmptyGameObject("PhysicsManager Holder");
-	PhysicsManager::initialize("PhysicsManager", holder);
+	EmptyGameObject* holder = new EmptyGameObject("Physics Manager Holder");
+	PhysicsManager::initialize("Physics Manager", holder);
 	this->registerObject(holder);
 
-	holder = new EmptyGameObject("FloorManager Holder");
-	this->registerObject(holder);
-
+	holder = new EmptyGameObject("Floor Manager");
 	FloorHandler* floorHandler = new FloorHandler(20, "FloorHandler", holder);
 	holder->attachComponent(floorHandler);
 	this->registerObject(holder);
 
-	holder = new EmptyGameObject("Barrel Holder");
+	holder = new EmptyGameObject("Barrel Manager");
 	BarrelHandler* barrelHandler = new BarrelHandler(30, "BarrelHandler", holder);
 	holder->attachComponent(barrelHandler);
 	this->registerObject(holder);
 
-	holder = new EmptyGameObject("HammerPool Holder");
-	this->registerObject(holder);
+	holder = new EmptyGameObject("Hammer Manager");
 	GameObjectPool* hammerPool = new GameObjectPool(ObjectPoolHolder::HAMMER_POOL_TAG, 10, new Hammer("Hammer"), holder);
 	hammerPool->initialize();
 	ObjectPoolHolder::getInstance()->registerObjectPool(hammerPool);
 
 	GameScreen* ui = new GameScreen("GameScreen");
 	this->registerObject(ui);
+
+	Border* border = new Border("Border");
+	this->registerObject(border);
 	
 	Player* player = new Player("Player");
 	this->registerObject(player);
 	player->getTransformable()->setPosition(630, 950);	
+	player->setSpawnPosition(630, 950);
 	
 	DonkeyKong* dk = new DonkeyKong("DonkeyKong");
 	this->registerObject(dk);
 	dk->getTransformable()->setPosition(630, 215);
-
 
 	// Spawn Floors
 	GameObjectPool* floorPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::FLOOR_POOL_TAG);
@@ -84,7 +84,7 @@ void Level1Scene::onLoadObjects()
 
 void Level1Scene::onUnloadResources()
 {
-
+	TextureManager::getInstance()->unloadAll();
 }
 
 sf::Vector2f Level1Scene::getDestination()

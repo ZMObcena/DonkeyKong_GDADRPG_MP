@@ -24,7 +24,7 @@ void Hammer::initialize()
 	this->sprite->setOrigin(bounds.width / 2, bounds.height / 2);
 
 	Renderer* renderer = new Renderer(this->name + " Renderer");
-	renderer->assignDrawable(sprite);
+	renderer->assignDrawable(this->sprite);
 	this->attachComponent(renderer);
 
 	this->collider = new Collider(this->name + " Collider");

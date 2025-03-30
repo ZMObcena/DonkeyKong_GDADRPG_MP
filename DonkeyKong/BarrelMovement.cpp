@@ -1,5 +1,7 @@
 #include "BarrelMovement.h"
 #include "Barrel.h"
+#include "ObjectPoolHolder.h"
+#include "GameObjectPool.h"
 
 BarrelMovement::BarrelMovement(std::string name) : AComponent(name, Script)
 {
@@ -11,7 +13,7 @@ void BarrelMovement::perform()
     Barrel* barrel = (Barrel*)this->getOwner();
     sf::Transformable* trans = barrel->getTransformable();
 
-    bool isGrounded = barrel->isOnFloor();
+    isGrounded = barrel->isOnFloor();
     float moveSpeed = barrel->getSpeed() * this->deltaTime.asSeconds();
 
     animationTimer += this->deltaTime.asSeconds();
@@ -33,7 +35,6 @@ void BarrelMovement::perform()
     else if (hasFallen)
     {
         // Adjust Y position to prevent clipping
-        float correctionOffset = -20.0f; // Move slightly up to align with the floor
         trans->move(0.0f, correctionOffset);
 
         velocityY = 0.0f;
@@ -46,6 +47,7 @@ void BarrelMovement::perform()
     // Move in chosen direction if grounded
     if (isGrounded)
     {
+        //fallTimer = 0.0f;
         trans->move(direction * moveSpeed, 0.0f);
 
         // Animate rolling frames (1 -> 2 -> 3 -> 4 loop)
@@ -58,4 +60,14 @@ void BarrelMovement::perform()
 
     // Update Sprite Animation
     barrel->getSprite()->setTextureRect(TextureManager::getInstance()->getSpriteRect("Barrel", frameIndex));
+}
+
+void BarrelMovement::reset()
+{
+    velocityY = 0.0f;
+    hasFallen = false;
+    isGrounded = false;  // Reset grounding state
+    direction = 1;       // Reset to a default direction (or randomize)
+    animationTimer = 0.0f;
+    frameIndex = 1;
 }

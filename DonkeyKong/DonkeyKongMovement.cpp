@@ -17,9 +17,16 @@ void DonkeyKongMovement::perform()
     const float animationSpeed = 0.18f;
     static bool isAttacking = false;
     static int attackStep = 0;
-
+    static bool hasSpawned = false;
     animationTimer += this->deltaTime.asSeconds();
     attackTimer += this->deltaTime.asSeconds();
+
+    if (frameIndex == 4 && !hasSpawned)
+    {
+        GameObjectPool* barrelPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::BARREL_POOL_TAG);
+        barrelPool->requestPoolable();
+        hasSpawned = true;
+    }
 
     if (isAttacking)
     {
@@ -32,8 +39,6 @@ void DonkeyKongMovement::perform()
 
             if (attackStep >= 4) // End attack sequence
             {
-                GameObjectPool* barrelPool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::BARREL_POOL_TAG);
-                barrelPool->requestPoolable();
                 isAttacking = false;
                 attackStep = 0;
                 frameIndex = 0; // Return to idle
@@ -54,6 +59,7 @@ void DonkeyKongMovement::perform()
         {
             frameIndex = (frameIndex == 0) ? 1 : 0; // Idle animation loop
             animationTimer = 0.0f;
+            hasSpawned = false;
         }
     }
 

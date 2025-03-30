@@ -1,5 +1,9 @@
 #include "Player.h"
 #include "PhysicsManager.h"
+#include "SceneManager.h"
+#include "ObjectPoolHolder.h"
+#include "GameObjectPool.h"
+
 
 Player::Player(std::string name) : AGameObject(name), CollisionListener()
 {
@@ -38,9 +42,6 @@ void Player::initialize()
 	this->attachComponent(collider);
 
 	PhysicsManager::getInstance()->trackObject(collider);
-
-	//Renderer* renderer = Renderer::CreateSprite("Player", "Mario");
-	//this->attachComponent(renderer);
 }
 
 void Player::onCollisionEnter(AGameObject* object)
@@ -57,12 +58,39 @@ void Player::onCollisionEnter(AGameObject* object)
 
 	if (object->getName() == "Barrel")
 	{
-
+		if (!isUsingHammer())
+		{
+			this->lives--;
+			this->lifeCheck(this->lives);
+		}
+		else
+		{
+			this->score += 100;
+		}
 	}	
+
+	if (object->getName() == "Fire")
+	{
+		if (!isUsingHammer())
+		{
+			this->lives--;
+			this->lifeCheck(this->lives);
+		}
+		else
+		{
+			this->score += 300;
+		}
+	}
 	
 	if (object->getName() == "Hammer")
 	{
 		this->isHammer = true;
+	}
+
+	if (object->getName() == "Border")
+	{
+		this->lives--;
+		this->lifeCheck(this->lives);
 	}
 
 	std::cout << "Player entered " + object->getName() << std::endl;
@@ -81,12 +109,26 @@ void Player::onCollisionExit(AGameObject* object)
 		this->onLadder = false;
 	}
 
-	if (object->getName() == "Barrel")
-	{
-
-	}
-
 	std::cout << "Player exited " + object->getName() << std::endl;
+}
+
+void Player::setSpawnPosition(float x, float y)
+{
+	this->spawn.x = x;
+	this->spawn.y = y;
+}
+
+void Player::lifeCheck(int life)
+{
+	if (life < 0)
+	{
+		//ObjectPoolHolder::getInstance()->unregisterObjectPool(GameObjectManager::getInstance()->findObjectByName(ObjectPoolHolder::BARREL_POOL_TAG));
+		SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE);
+	}
+	else
+	{
+		this->setPosition(this->spawn.x, this->spawn.y);
+	}
 }
 
 bool Player::isOnFloor() { return this->onFloor; }

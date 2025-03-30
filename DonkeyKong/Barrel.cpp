@@ -31,17 +31,13 @@ void Barrel::initialize()
 	this->attachComponent(movement);
 
 	Renderer* renderer = new Renderer(this->name + " Renderer");
-	renderer->assignDrawable(sprite);
+	renderer->assignDrawable(this->sprite);
 	this->attachComponent(renderer);
 
 	this->collider = new Collider(this->name + " Collider");
 	this->collider->setOffset(this->sprite->getLocalBounds());
 	this->collider->assignListener(this);
 	this->attachComponent(this->collider);
-
-	//this->setPosition(730, 248);
-	//this->setPosition(730, 950);
-
 }
 
 void Barrel::setSpawnPosition(float x, float y)
@@ -56,12 +52,14 @@ void Barrel::onRelease()
 
 void Barrel::onActivate()
 {
-	if (collider == nullptr)
-	{
-		std::cout << this->name << " collider is null \n";
-	}
-
 	this->setPosition(720, 250);
+	this->onFloor = true;
+
+	BarrelMovement* movement = (BarrelMovement*)this->findComponentByName(this->name + " Movement");
+	if (movement)
+	{
+		movement->reset();
+	}
 	PhysicsManager::getInstance()->trackObject(this->collider);
 }
 
@@ -75,7 +73,8 @@ void Barrel::onCollisionEnter(AGameObject* object)
 {
 	if (object->getName() == "Player")
 	{
-
+		GameObjectPool* pool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::BARREL_POOL_TAG);
+		pool->releasePoolable((APoolable*)this);
 	}
 
 	if (object->getName() == "Floor")
@@ -92,6 +91,12 @@ void Barrel::onCollisionExit(AGameObject* object)
 	{
 		this->onFloor = false;
 
+	}
+
+	if (object->getName() == "Border")
+	{
+		GameObjectPool* pool = ObjectPoolHolder::getInstance()->getPool(ObjectPoolHolder::BARREL_POOL_TAG);
+		pool->releasePoolable((APoolable*)this);
 	}
 
 	std::cout << this->name + " exited " + object->getName() << std::endl;

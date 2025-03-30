@@ -4,14 +4,6 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"
 {
 	mWindow.setFramerateLimit(60);
 
-	//TextureManager::getInstance()->loadAll();
-
-	//BGObject* bgObject = new BGObject("BGObject");
-	//GameObjectManager::getInstance()->addObject(bgObject);
-
-	//Player* player = new Player("Player");
-	//GameObjectManager::getInstance()->addObject(player);
-
 	/*
 	srand(time(nullptr));
 	EmptyGameObject* enemiesManager = new EmptyGameObject("EnemiesManager");
@@ -22,9 +14,9 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"
 	FontManager::getInstance()->loadAll();
 	SceneManager::getInstance()->registerScene(new MainMenuScene());
 	SceneManager::getInstance()->registerScene(new Level1Scene());
-	SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE_NAME);
+	SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE);
 }
-
+  
 void Game::run()
 {
 	sf::Clock clock = sf::Clock();
@@ -39,8 +31,8 @@ void Game::run()
 			timeSinceLastUpdate -= TimePerFrame;
 			this->update(TimePerFrame);
 		}
-		SceneManager::getInstance()->checkLoadScene();
 		this->render();
+		SceneManager::getInstance()->checkLoadScene();
 	}
 }
 

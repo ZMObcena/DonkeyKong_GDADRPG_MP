@@ -143,6 +143,7 @@
     <ClCompile Include="Barrel.cpp" />
     <ClCompile Include="BarrelHandler.cpp" />
     <ClCompile Include="BarrelMovement.cpp" />
+    <ClCompile Include="Border.cpp" />
     <ClCompile Include="Collider.cpp" />
     <ClCompile Include="DonkeyKong.cpp" />
     <ClCompile Include="DonkeyKongMovement.cpp" />
@@ -189,6 +190,7 @@
     <ClInclude Include="Barrel.h" />
     <ClInclude Include="BarrelHandler.h" />
     <ClInclude Include="BarrelMovement.h" />
+    <ClInclude Include="Border.h" />
     <ClInclude Include="ButtonListener.h" />
     <ClInclude Include="Collider.h" />
     <ClInclude Include="CollisionListener.h" />

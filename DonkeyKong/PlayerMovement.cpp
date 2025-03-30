@@ -149,7 +149,7 @@ void PlayerMovement::perform()
         frameIndex = 9;
     }
 
-    if ((!isGrounded || isJumping) && !isOnLadder && !isUsingHammer)
+    if ((!isGrounded || isJumping) && !isOnLadder)
     {
         velocityY += gravity * this->deltaTime.asSeconds();
         trans->move(0.0f, velocityY * this->deltaTime.asSeconds());

@@ -25,12 +25,22 @@ public:
 	bool isOnLadder();
 	bool isUsingHammer();
 	void setUsingHammer(bool hammer);
+	void setSpawnPosition(float x, float y);
 	bool facingRight = false;
+
+private:
+	void lifeCheck(int life);
+
 
 private:
 	float fPlayerSpeed = 250.f;
 	bool onFloor = false;
 	bool onLadder = false;
 	bool isHammer = false;
+
+	int lives = 3;
+	int score = 0;
+
+	sf::Vector2f spawn;
 };
 

@@ -1,4 +1,5 @@
 #include "PlayerInputController.h"
+#include "SceneManager.h"
 
 PlayerInputController::PlayerInputController(std::string name) : GenericInputController(name)
 {
@@ -51,6 +52,10 @@ void PlayerInputController::processKeyInput(bool pressed)
 
     case sf::Keyboard::D:
         this->moveRight = pressed;
+        break;
+
+    case sf::Keyboard::I:
+        SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE);
         break;
 
     default:

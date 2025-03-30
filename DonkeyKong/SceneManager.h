@@ -9,7 +9,7 @@ typedef std::vector<std::string> SceneList;
 class SceneManager
 {
 public:
-	static std::string MAIN_MENU_SCENE_NAME;
+	static std::string MAIN_MENU_SCENE;
 	static std::string GAME_SCENE_NAME;
 	static std::string LEVEL_1_SCENE;
 	static std::string LEVEL_2_SCENE;
