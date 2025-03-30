@@ -3,7 +3,9 @@
 
 Renderer::Renderer(std::string name) : AComponent(name, AComponent::Renderer)
 {
-
+	this->renderStates = sf::RenderStates::Default;
+	this->drawable = nullptr;
+	this->targetWindow = nullptr;
 }
 
 Renderer::~Renderer()

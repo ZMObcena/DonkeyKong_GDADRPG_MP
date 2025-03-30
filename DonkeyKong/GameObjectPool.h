@@ -23,7 +23,7 @@ class GameObjectPool
         std::string tag;
         APoolable* objectCopy = NULL;
         AGameObject* parent = NULL;
-        int maxPoolSize = 20;
+        int maxPoolSize = 200;
         std::vector<APoolable*> availableObjects;
         std::vector<APoolable*> usedObjects;
 

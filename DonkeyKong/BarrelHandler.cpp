@@ -33,11 +33,11 @@ void BarrelHandler::perform()
 	
 	else if (level == 2)
 	{
-
+		SpawnManager::getInstance()->setBarrelSpawn(720, 250);
 	}
 
 	else if (level == 3)
 	{
-
+		SpawnManager::getInstance()->setBarrelSpawn(720, 250);
 	}
 }

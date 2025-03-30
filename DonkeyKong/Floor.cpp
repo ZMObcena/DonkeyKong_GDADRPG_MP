@@ -1,6 +1,6 @@
 #include "Floor.h"
 #include "PhysicsManager.h"
-#include "Level1Scene.h"
+#include "LevelManager.h"
 #include "SpawnManager.h"
 
 Floor::Floor(std::string name) : APoolable(name), CollisionListener()
@@ -10,7 +10,7 @@ Floor::Floor(std::string name) : APoolable(name), CollisionListener()
 
 Floor::~Floor()
 {
-
+	std::cout << "Floor gone\n";
 }
 
 void Floor::initialize()
@@ -40,7 +40,8 @@ void Floor::setSpawnPosition(float x, float y)
 
 void Floor::onRelease()
 {
-
+	std::cout << "Floor gang\n";
+	PhysicsManager::getInstance()->untrackObject(this->collider);
 }
 
 void Floor::onActivate()
@@ -66,7 +67,7 @@ APoolable* Floor::clone()
 
 void Floor::onCollisionEnter(AGameObject* object)
 {
-	std::cout << "Colliding with " << object->getName() << std::endl;
+
 }
 
 void Floor::onCollisionExit(AGameObject* object)

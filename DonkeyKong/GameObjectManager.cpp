@@ -84,6 +84,7 @@ void GameObjectManager::deleteAllObjectsInScene()
 	this->mGameObjectList.clear();
 	this->mGameObjectList.shrink_to_fit();
 	this->mGameObjectList.clear();
+	//this->mGameObjectMap.clear();
 }
 
 GameObjectManager* GameObjectManager::sharedInstance = nullptr;

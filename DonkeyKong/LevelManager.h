@@ -4,7 +4,7 @@ class LevelManager
 {
 public:
 	static LevelManager* getInstance();
-	void setLevel(int level);
+	void increaseLevel();
 	int getLevel();
 
 	void proceedToNextLevel(bool proceed);
@@ -17,6 +17,7 @@ private:
 
 	static LevelManager* sharedInstance;
 
+	void checkLevel();
 	int level = 1;
 	bool nextLevel = true;
 };

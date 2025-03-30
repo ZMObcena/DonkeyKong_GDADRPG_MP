@@ -57,11 +57,55 @@ void LadderHandler::perform()
 
 	else if (level == 2 && proceed)
 	{
+		SpawnManager::getInstance()->setLadderSpawn(580, 873);
+		this->pool->requestPoolable();
 
+		SpawnManager::getInstance()->setLadderSpawn(1240, 873);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(1920 / 2, 863 - offset);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(580, 853 - offset * 2);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(1240, 853 - offset * 2);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(1360, 843 - offset * 3);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(1140, 843 - offset * 4);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(1260, 843 - offset * 4);
+		this->pool->requestPoolable();
 	}
 
 	else if (level == 3 && proceed)
 	{
+		SpawnManager::getInstance()->setLadderSpawn(580, 873);
+		this->pool->requestPoolable();
 
+		SpawnManager::getInstance()->setLadderSpawn(1240, 873);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(1920 / 2, 863 - offset);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(580, 853 - offset * 2);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(1240, 853 - offset * 2);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(1360, 843 - offset * 3);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(1140, 843 - offset * 4);
+		this->pool->requestPoolable();
+
+		SpawnManager::getInstance()->setLadderSpawn(1260, 843 - offset * 4);
+		this->pool->requestPoolable();
 	}
 }

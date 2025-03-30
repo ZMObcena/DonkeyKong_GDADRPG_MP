@@ -1,6 +1,8 @@
 #include "GameScreen.h"
 #include "TextureManager.h"
-//#include
+#include "FontManager.h"
+#include "UIData.h"
+#include "UIManager.h"
 GameScreen::GameScreen(std::string name) : AGameObject(name)
 {
 
@@ -8,27 +10,8 @@ GameScreen::GameScreen(std::string name) : AGameObject(name)
 
 void GameScreen::initialize()
 {
-	sf::Texture* normal = TextureManager::getInstance()->getTexture("Lives");
-	sf::Texture* pressed = TextureManager::getInstance()->getTexture("Lives");
-
-	int offset = 390;
-	UIButton* lives = new UIButton("Life 1", normal, pressed);
-	this->attachChild(lives);
-	lives->setPosition(70 + offset, 100);
-	lives->getTransformable()->setScale(-2.f, 2.f);
-
-	lives = new UIButton("Life 2", normal, pressed);
-	this->attachChild(lives);
-	lives->setPosition(110 + offset, 100);
-	lives->getTransformable()->setScale(-2.f, 2.f);
-
-	lives = new UIButton("Life 3", normal, pressed);
-	this->attachChild(lives);
-	lives->setPosition(150 + offset, 100);
-	lives->getTransformable()->setScale(-2.f, 2.f);
-
-	normal = TextureManager::getInstance()->getTexture("BarrelBG");
-	pressed = TextureManager::getInstance()->getTexture("BarrelBG");
+	sf::Texture* normal = TextureManager::getInstance()->getTexture("BarrelBG");
+	sf::Texture *pressed = TextureManager::getInstance()->getTexture("BarrelBG");
 
 	UIButton* barrel = new UIButton("BarrelBG_1", normal, pressed);
 	this->attachChild(barrel);
@@ -47,9 +30,18 @@ void GameScreen::initialize()
 
 	UIText* livesText = new UIText("Lives Text");
 	this->attachChild(livesText);
-	livesText->setFont("Sansation");
+	livesText->setFont("Dejavu");
+	livesText->setPosition(150, 100);
+
+	UIText* scoreText = new UIText("ScoreText");
+	this->attachChild(scoreText);
+
+	//UIData* scoreData = UIManager::getInstance()->storeData(score->getName());
+	//scoreData->bindUIText(scoreText);
+	//scoreData->putInt(UIManager::SCORE_UI_KEY, 0);
+	//scoreData->refreshTextFromData(scoreText->getName(), UIManager::SCORE_UI_KEY, "SCORE: ");
+
 	//livesText->setText("Lives: " << );
-	livesText->setPosition(150 + offset, 100);
 }
 
 void GameScreen::onButtonClick(UIButton* button)

@@ -54,10 +54,26 @@ void PlayerInputController::processKeyInput(bool pressed)
         this->moveRight = pressed;
         break;
 
-    case sf::Keyboard::I:
+    // FOR TESTING ONLY
+    case sf::Keyboard::Num0:
         SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE);
         break;
 
+    case sf::Keyboard::Num1:
+        SceneManager::getInstance()->loadScene(SceneManager::LEVEL_1_SCENE);
+        break;
+
+    case sf::Keyboard::Num2:
+        SceneManager::getInstance()->loadScene(SceneManager::LEVEL_2_SCENE);
+        break;
+
+    case sf::Keyboard::Num3:
+        SceneManager::getInstance()->loadScene(SceneManager::LEVEL_3_SCENE);
+        break;
+
+    case sf::Keyboard::Num4:
+        SceneManager::getInstance()->loadScene(SceneManager::RESULTS_SCENE);
+        break;
     default:
         break;
     }

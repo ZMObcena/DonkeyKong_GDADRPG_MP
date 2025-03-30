@@ -3,24 +3,28 @@
 
 LevelManager* LevelManager::sharedInstance = nullptr;
 
-void LevelManager::setLevel(int level)
+void LevelManager::increaseLevel()
 {
-	if (this->level + level > 3)
+	this->level++;
+	this->checkLevel();
+}
+
+void LevelManager::checkLevel()
+{
+	if (this->level > 3)
 	{
 		this->level = 1;
 		SceneManager::getInstance()->loadScene(SceneManager::RESULTS_SCENE);
 	}
-	else if (this->level + level == 3)
+	else if (this->level == 3)
 	{
-		this->level += level;
+		this->proceedToNextLevel(true);
 		SceneManager::getInstance()->loadScene(SceneManager::LEVEL_3_SCENE);
-		this->proceedToNextLevel(true);
 	}
-	else if (this->level + level == 2)
+	else if (this->level  == 2)
 	{
-		this->level += level;
-		SceneManager::getInstance()->loadScene(SceneManager::LEVEL_2_SCENE);
 		this->proceedToNextLevel(true);
+		SceneManager::getInstance()->loadScene(SceneManager::LEVEL_2_SCENE);
 	}
 }
 

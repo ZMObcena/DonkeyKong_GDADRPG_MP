@@ -4,6 +4,9 @@
 #include "ObjectPoolHolder.h"
 #include "GameObjectPool.h"
 #include "LevelManager.h"
+#include "SpawnManager.h"
+#include "UIData.h"
+#include "UIManager.h"
 
 Player::Player(std::string name) : AGameObject(name), CollisionListener()
 {
@@ -66,6 +69,9 @@ void Player::onCollisionEnter(AGameObject* object)
 		else
 		{
 			this->score += 100;
+			UIData* scoreData = UIManager::getInstance()->getUIData("ScoreText");
+			scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, 0) + 100);
+			scoreData->refreshTextFromData("ScoreText", UIManager::SCORE_UI_KEY, "SCORE: ");
 		}
 	}	
 
@@ -79,6 +85,7 @@ void Player::onCollisionEnter(AGameObject* object)
 		else
 		{
 			this->score += 300;
+
 		}
 	}
 	
@@ -95,7 +102,8 @@ void Player::onCollisionEnter(AGameObject* object)
 
 	if (object->getName() == "Pauline")
 	{
-		LevelManager::getInstance()->setLevel(LevelManager::getInstance()->getLevel() + 1);
+		LevelManager::getInstance()->increaseLevel();
+		std::cout << "Level: " << LevelManager::getInstance()->getLevel() << std::endl;
 
 	}
 
@@ -128,11 +136,11 @@ void Player::lifeCheck(int life)
 {
 	if (life < 0)
 	{
-		//ObjectPoolHolder::getInstance()->unregisterObjectPool(GameObjectManager::getInstance()->findObjectByName(ObjectPoolHolder::BARREL_POOL_TAG));
 		SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE);
 	}
 	else
 	{
+		this->spawn = SpawnManager::getInstance()->getPlayerSpawn();
 		this->setPosition(this->spawn.x, this->spawn.y);
 	}
 }

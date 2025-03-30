@@ -4,17 +4,14 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"
 {
 	mWindow.setFramerateLimit(60);
 
-	/*
-	srand(time(nullptr));
-	EmptyGameObject* enemiesManager = new EmptyGameObject("EnemiesManager");
-	EnemySwarmHandler* swarmHandler = new EnemySwarmHandler(200, "SwarmHandler", enemiesManager);
-	enemiesManager->attachComponent(swarmHandler);
-	GameObjectManager::getInstance()->addObject(enemiesManager);
-	*/
 	FontManager::getInstance()->loadAll();
 	SceneManager::getInstance()->registerScene(new MainMenuScene());
+	SceneManager::getInstance()->registerScene(new ResultsScene());
 	SceneManager::getInstance()->registerScene(new Level1Scene());
+	SceneManager::getInstance()->registerScene(new Level2Scene());
+	SceneManager::getInstance()->registerScene(new Level3Scene());
 	SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE);
+	//SceneManager::getInstance()->loadScene(SceneManager::LEVEL_3_SCENE);
 }
   
 void Game::run()
@@ -31,8 +28,8 @@ void Game::run()
 			timeSinceLastUpdate -= TimePerFrame;
 			this->update(TimePerFrame);
 		}
-		SceneManager::getInstance()->checkLoadScene();
 		this->render();
+		SceneManager::getInstance()->checkLoadScene();
 	}
 }
 

@@ -20,7 +20,7 @@ void GameObjectPool::initialize() {
     for (int i = 0; i < this->maxPoolSize; i++) {
         APoolable* pPoolableObject = this->objectCopy->clone();
 
-        if (this->parent != NULL)
+        if (this->parent != nullptr)
             this->parent->attachChild(pPoolableObject);
         else
             GameObjectManager::getInstance()->addObject(pPoolableObject);
@@ -42,6 +42,10 @@ APoolable* GameObjectPool::requestPoolable() {
         this->usedObjects.push_back(pPoolableObject);
         this->setEnabled(pPoolableObject, true);
         return pPoolableObject;
+    }
+    else 
+    {
+        std::cout << "No more poolable " << this->objectCopy->getName() << " available." << std::endl;
     }
 
     return NULL;
