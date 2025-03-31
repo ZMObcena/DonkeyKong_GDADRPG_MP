@@ -11,6 +11,9 @@ class UIManager
 {
 public:
 	static const std::string SCORE_UI_KEY;
+	static const std::string LIFE_UI_KEY;
+	static const std::string LEVEL_UI_KEY;
+
 	static UIManager* getInstance();
 
 	UIData* getUIData(std::string name);

@@ -4,8 +4,16 @@ class LevelManager
 {
 public:
 	static LevelManager* getInstance();
+	void reset();
 	void increaseLevel();
 	int getLevel();
+	void setLevel(int level);
+
+	void setScore(int score);
+	int getScore();
+
+	void setLives(int lives);
+	int getLives();
 
 	void proceedToNextLevel(bool proceed);
 	bool goNextLevel();
@@ -19,6 +27,8 @@ private:
 
 	void checkLevel();
 	int level = 1;
+	int score = 0;
+	int lives = 5;
 	bool nextLevel = true;
 };
 

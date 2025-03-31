@@ -17,6 +17,7 @@ void FontManager::loadAll()
 {
 	loadFont("Dejavu", "Media/Font/DejaVuSans.ttf");
 	loadFont("Sansation", "Media/Font/Sansation.ttf");
+	loadFont("PressStart", "Media/Font/PressStart.ttf");
 }
 
 sf::Font* FontManager::getFont(std::string key)

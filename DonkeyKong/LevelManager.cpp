@@ -3,6 +3,13 @@
 
 LevelManager* LevelManager::sharedInstance = nullptr;
 
+void LevelManager::reset()
+{
+	this->level = 1;
+	this->score = 0;
+	this->lives = 3;
+}
+
 void LevelManager::increaseLevel()
 {
 	this->level++;
@@ -13,22 +20,35 @@ void LevelManager::checkLevel()
 {
 	if (this->level > 3)
 	{
-		this->level = 1;
 		SceneManager::getInstance()->loadScene(SceneManager::RESULTS_SCENE);
 	}
-	else if (this->level == 3)
+	else
 	{
-		this->proceedToNextLevel(true);
-		SceneManager::getInstance()->loadScene(SceneManager::LEVEL_3_SCENE);
+		SceneManager::getInstance()->loadScene(SceneManager::RESULTS_SCENE);
 	}
-	else if (this->level  == 2)
-	{
-		this->proceedToNextLevel(true);
-		SceneManager::getInstance()->loadScene(SceneManager::LEVEL_2_SCENE);
-	}
+
+}
+
+void LevelManager::setLevel(int level)
+{
+	this->level = level;
 }
 
 int LevelManager::getLevel() { return this->level; }
+
+void LevelManager::setScore(int score)
+{
+	this->score = score;
+}
+
+int LevelManager::getLives() { return this->lives; }
+
+void LevelManager::setLives(int lives)
+{
+	this->lives = lives;
+}
+
+int LevelManager::getScore() { return this->score; }
 
 void LevelManager::proceedToNextLevel(bool proceed)
 {

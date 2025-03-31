@@ -38,8 +38,8 @@ private:
 	bool onLadder = false;
 	bool isHammer = false;
 
-	int lives = 3;
-	int score = 0;
+	int lives;
+	int score;
 
 	sf::Vector2f spawn;
 };

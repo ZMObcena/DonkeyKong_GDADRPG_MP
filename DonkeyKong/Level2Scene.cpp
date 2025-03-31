@@ -20,6 +20,8 @@
 #include "Ladder.h"
 #include "BGObject.h"
 #include "LevelManager.h"
+#include "UIData.h"
+#include "UIManager.h"
 
 Level2Scene::Level2Scene() : AScene("Level2Scene") {}
 
@@ -58,6 +60,36 @@ void Level2Scene::onLoadObjects()
 
 	GameScreen* ui = new GameScreen("GameScreen");
 	this->registerObject(ui);
+
+	UIText* scoreText = new UIText("ScoreText");
+	scoreText->setPosition(1920 / 2, 48);
+	scoreText->setSize(30);
+	scoreText->setText("0");
+	this->registerObject(scoreText);
+	UIData* scoreData = UIManager::getInstance()->storeData(scoreText->getName());
+	scoreData->bindUIText(scoreText);
+	scoreData->putInt(UIManager::SCORE_UI_KEY, LevelManager::getInstance()->getScore());
+	scoreData->refreshTextFromData(scoreText->getName(), UIManager::SCORE_UI_KEY, "");
+
+	UIText* lifeText = new UIText("LifeText");
+	lifeText->setPosition(200, 48);
+	lifeText->setSize(30);
+	lifeText->setText("LIVES:3");
+	this->registerObject(lifeText);
+	UIData* lifeData = UIManager::getInstance()->storeData(lifeText->getName());
+	lifeData->bindUIText(lifeText);
+	lifeData->putInt(UIManager::LIFE_UI_KEY, LevelManager::getInstance()->getLives());
+	lifeData->refreshTextFromData(lifeText->getName(), UIManager::LIFE_UI_KEY, "LIVES:");
+
+	UIText* levelText = new UIText("LevelText");
+	levelText->setPosition(1700, 48);
+	levelText->setSize(30);
+	levelText->setText("LEVEL:");
+	this->registerObject(levelText);
+	UIData* levelData = UIManager::getInstance()->storeData(levelText->getName());
+	levelData->bindUIText(levelText);
+	levelData->putInt(UIManager::LEVEL_UI_KEY, LevelManager::getInstance()->getLevel());
+	levelData->refreshTextFromData(levelText->getName(), UIManager::LEVEL_UI_KEY, "LEVEL:");
 
 	Border* lowerBorder = new Border("Border");
 	lowerBorder->setPosition(1920 / 2, 2000);

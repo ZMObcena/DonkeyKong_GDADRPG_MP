@@ -45,6 +45,9 @@ void Player::initialize()
 	this->attachComponent(collider);
 
 	PhysicsManager::getInstance()->trackObject(collider);
+
+	this->lives = LevelManager::getInstance()->getLives();
+	this->score = LevelManager::getInstance()->getScore();
 }
 
 void Player::onCollisionEnter(AGameObject* object)
@@ -64,14 +67,19 @@ void Player::onCollisionEnter(AGameObject* object)
 		if (!isUsingHammer())
 		{
 			this->lives--;
+			LevelManager::getInstance()->setLives(this->lives);
 			this->lifeCheck(this->lives);
+			UIData* lifeData = UIManager::getInstance()->getUIData("LifeText");
+			lifeData->putInt(UIManager::SCORE_UI_KEY, lifeData->getInt(UIManager::LIFE_UI_KEY, LevelManager::getInstance()->getLives()) - 1);
+			lifeData->refreshTextFromData("LifeText", UIManager::LIFE_UI_KEY, "LIVES:");
 		}
 		else
 		{
 			this->score += 100;
+			LevelManager::getInstance()->setScore(this->score);
 			UIData* scoreData = UIManager::getInstance()->getUIData("ScoreText");
-			scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, 0) + 100);
-			scoreData->refreshTextFromData("ScoreText", UIManager::SCORE_UI_KEY, "SCORE: ");
+			scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, LevelManager::getInstance()->getScore()) + 100);
+			scoreData->refreshTextFromData("ScoreText", UIManager::SCORE_UI_KEY, "");
 		}
 	}	
 
@@ -80,12 +88,19 @@ void Player::onCollisionEnter(AGameObject* object)
 		if (!isUsingHammer())
 		{
 			this->lives--;
+			LevelManager::getInstance()->setLives(this->lives);
 			this->lifeCheck(this->lives);
+			UIData* scoreData = UIManager::getInstance()->getUIData("LifeText");
+			scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::LIFE_UI_KEY, LevelManager::getInstance()->getLives()) - 1);
+			scoreData->refreshTextFromData("LifeText", UIManager::LIFE_UI_KEY, "LIVES:");
 		}
 		else
 		{
 			this->score += 300;
-
+			LevelManager::getInstance()->setScore(this->score);
+			UIData* scoreData = UIManager::getInstance()->getUIData("ScoreText");
+			scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, LevelManager::getInstance()->getScore()) + 300);
+			scoreData->refreshTextFromData("ScoreText", UIManager::SCORE_UI_KEY, "");
 		}
 	}
 	
@@ -97,14 +112,17 @@ void Player::onCollisionEnter(AGameObject* object)
 	if (object->getName() == "Border")
 	{
 		this->lives--;
+		LevelManager::getInstance()->setLives(this->lives);
+		this->isHammer = false;
 		this->lifeCheck(this->lives);
+		UIData* lifeData = UIManager::getInstance()->getUIData("LifeText");
+		lifeData->putInt(UIManager::LIFE_UI_KEY, lifeData->getInt(UIManager::LIFE_UI_KEY, LevelManager::getInstance()->getLives()) - 1);
+		lifeData->refreshTextFromData("LifeText", UIManager::LIFE_UI_KEY, "LIVES:");
 	}
 
 	if (object->getName() == "Pauline")
 	{
 		LevelManager::getInstance()->increaseLevel();
-		std::cout << "Level: " << LevelManager::getInstance()->getLevel() << std::endl;
-
 	}
 
 	std::cout << "Player entered " + object->getName() << std::endl;
@@ -122,8 +140,6 @@ void Player::onCollisionExit(AGameObject* object)
 	{
 		this->onLadder = false;
 	}
-
-	std::cout << "Player exited " + object->getName() << std::endl;
 }
 
 void Player::setSpawnPosition(float x, float y)
@@ -136,7 +152,7 @@ void Player::lifeCheck(int life)
 {
 	if (life < 0)
 	{
-		SceneManager::getInstance()->loadScene(SceneManager::MAIN_MENU_SCENE);
+		SceneManager::getInstance()->loadScene(SceneManager::RESULTS_SCENE);
 	}
 	else
 	{

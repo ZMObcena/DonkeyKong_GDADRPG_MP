@@ -54,26 +54,8 @@ void UIData::bindUIText(UIText* uiText)
 
 void UIData::refreshTextFromData(std::string objectName, std::string key, std::string prefix)
 {
-	if (this->textTable.count(objectName) == 0)
-		return; // No associated UIText found
-
-	UIText* uiText = this->textTable[objectName];
-
-	std::string newText = prefix; // Start with prefix
-
-	// Check if key exists in intTable or floatTable
-	if (this->intTable.count(key))
+	if (this->textTable.count(objectName) != 0)
 	{
-		newText += std::to_string(this->intTable[key]);
+		this->textTable[objectName]->setText(prefix + " " + std::to_string(this->getInt(key, 0)));
 	}
-	else if (this->floatTable.count(key))
-	{
-		newText += std::to_string(this->floatTable[key]);
-	}
-	else
-	{
-		newText += "[MISSING DATA]"; // Handle missing keys
-	}
-
-	uiText->setText(newText);
 }

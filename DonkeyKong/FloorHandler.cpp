@@ -53,8 +53,9 @@ void FloorHandler::perform()
 
 	if (level == 2 && proceed)
 	{
-
 		LevelManager::getInstance()->proceedToNextLevel(false);
+
+		floorPool->requestPoolable();
 
 		for (int i = 0; i < 5; ++i)
 		{
@@ -64,19 +65,21 @@ void FloorHandler::perform()
 				// Alternates between (1920/2 + 150) and (1920/2 - 150)
 				float x = (i % 2 == 0) ? (1920 / 2 - 40) : (1920 / 2 + 40);
 
-				SpawnManager::getInstance()->setFloorSpawn(x, y, 30.0f, 2.0f);
-				this->floorPool->requestPoolable();
+				SpawnManager::getInstance()->setFloorSpawn(x, y, 65.0f, 2.0f);
+				floorPool->requestPoolable();
 			}
 		}
 
-		SpawnManager::getInstance()->setFloorSpawn(1200, 100, 30.0f, 2.0f);
-		this->floorPool->requestPoolable();
+		SpawnManager::getInstance()->setFloorSpawn(1200, 100, 10.0f, 2.0f);
+		floorPool->requestPoolable();
 	}
 
 	if (level == 3 && proceed)
 	{
 		LevelManager::getInstance()->proceedToNextLevel(false);
 
+		floorPool->requestPoolable();
+
 		for (int i = 0; i < 5; ++i)
 		{
 			float y = 1000 - (i * 180); // Start at 1000 and decrease by 180 for each set
@@ -85,12 +88,12 @@ void FloorHandler::perform()
 				// Alternates between (1920/2 + 150) and (1920/2 - 150)
 				float x = (i % 2 == 0) ? (1920 / 2 - 40) : (1920 / 2 + 40);
 
-				SpawnManager::getInstance()->setFloorSpawn(x, y, 30.0f, 2.0f);
-				this->floorPool->requestPoolable();
+				SpawnManager::getInstance()->setFloorSpawn(x, y, 65.0f, 2.0f);
+				floorPool->requestPoolable();
 			}
 		}
 
 		SpawnManager::getInstance()->setFloorSpawn(1200, 100, 10.0f, 2.0f);
-		this->floorPool->requestPoolable();
+		floorPool->requestPoolable();
 	}
 }

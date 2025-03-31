@@ -9,27 +9,27 @@ UIText::UIText(std::string name) : AGameObject(name)
 
 UIText::~UIText()
 {
-	delete this->text;
+	//delete this->text;
 }
 
 void UIText::initialize()
 {
-	//sf::Font* font = FontManager::getInstance()->getFont("Dejavu");
-	//text->setFont(*font);
+	sf::Font* font = FontManager::getInstance()->getFont("PressStart");
+	this->text->setFont(*font);
 	this->text->setFillColor(sf::Color::White);
 	this->text->setOutlineColor(sf::Color::Black);
-	this->text->setOutlineThickness(4.0f);
-	this->setSize(40);
-	this->setText("[PLACEHOLDER]");
+	this->text->setOutlineThickness(8.0f);
+	//this->setSize(30);
+	this->setText("-");
 
 	Renderer* renderer = new Renderer(this->name + " Renderer");
 	renderer->assignDrawable(text);
 	this->attachComponent(renderer);
 }
 
-void UIText::setText(std::string text)
+void UIText::setText(std::string something)
 {
-	this->text->setString(text);
+	this->text->setString(something);
 	sf::FloatRect bounds = this->text->getLocalBounds();
 	this->text->setOrigin(bounds.width / 2, bounds.height / 2);
 }

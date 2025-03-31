@@ -3,6 +3,7 @@
 #include "FontManager.h"
 #include "UIData.h"
 #include "UIManager.h"
+
 GameScreen::GameScreen(std::string name) : AGameObject(name)
 {
 
@@ -27,21 +28,6 @@ void GameScreen::initialize()
 	this->attachChild(barrel);
 	barrel->setPosition(445, 230);
 	barrel->getTransformable()->setScale(2.2f, 2.2f);
-
-	UIText* livesText = new UIText("Lives Text");
-	this->attachChild(livesText);
-	livesText->setFont("Dejavu");
-	livesText->setPosition(150, 100);
-
-	UIText* scoreText = new UIText("ScoreText");
-	this->attachChild(scoreText);
-
-	//UIData* scoreData = UIManager::getInstance()->storeData(score->getName());
-	//scoreData->bindUIText(scoreText);
-	//scoreData->putInt(UIManager::SCORE_UI_KEY, 0);
-	//scoreData->refreshTextFromData(scoreText->getName(), UIManager::SCORE_UI_KEY, "SCORE: ");
-
-	//livesText->setText("Lives: " << );
 }
 
 void GameScreen::onButtonClick(UIButton* button)

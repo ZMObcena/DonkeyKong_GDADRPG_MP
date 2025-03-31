@@ -63,5 +63,9 @@ void MainMenuScreen::onButtonReleased(UIButton* button)
 	{
 		SceneManager::getInstance()->loadScene(SceneManager::LEVEL_1_SCENE);
 		LevelManager::getInstance()->proceedToNextLevel(true);
+		LevelManager::getInstance()->setLives(3);
+		LevelManager::getInstance()->setScore(0);
+		LevelManager::getInstance()->setLevel(1);
+
 	}
 }

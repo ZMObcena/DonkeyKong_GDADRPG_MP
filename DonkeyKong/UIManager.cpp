@@ -3,6 +3,8 @@
 UIManager* UIManager::sharedInstance = NULL;
 
 const std::string UIManager::SCORE_UI_KEY = "SCORE_UI_KEY";
+const std::string UIManager::LIFE_UI_KEY = "LIFE_UI_KEY";
+const std::string UIManager::LEVEL_UI_KEY = "LEVEL_UI_KEY";
 
 UIManager* UIManager::getInstance()
 {

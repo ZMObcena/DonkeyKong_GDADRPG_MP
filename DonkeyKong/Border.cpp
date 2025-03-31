@@ -21,9 +21,9 @@ void Border::initialize()
 	rectangle->setOutlineColor(sf::Color::Black);
 	rectangle->setOrigin(rectangle->getSize().x / 2, rectangle->getSize().y / 2);
 
-	Renderer* renderer = new Renderer(this->name + " Renderer");
+	/*Renderer* renderer = new Renderer(this->name + " Renderer");
 	renderer->assignDrawable(rectangle);
-	this->attachComponent(renderer);
+	this->attachComponent(renderer);*/
 
 	Collider* collider = new Collider(this->name + " Collider");
 	collider->setOffset(rectangle->getGlobalBounds());
