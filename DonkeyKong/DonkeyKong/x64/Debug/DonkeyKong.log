@@ -1,2 +1,205 @@
-﻿  ResultsScreen.cpp
-  DonkeyKong.vcxproj -> C:\Users\zmobc\OneDrive\Documents\AAASchool\4th Year\Term 2\GDADPRG\MP\DonkeyKong\x64\Debug\DonkeyKong.exe
+﻿  AComponent.cpp
+  AGameObject.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\AGameObject.cpp(248,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  APoolable.cpp
+  ApplicationManager.cpp
+  AScene.cpp
+  Barrel.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Barrel.cpp(24,59): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Barrel.cpp(24,59): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Barrel.cpp(24,59): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Barrel.cpp(24,59): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Barrel.cpp(24,59): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Barrel.cpp(24,40): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Barrel.cpp(24,40): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Barrel.cpp(24,40): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Barrel.cpp(24,40): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Barrel.cpp(24,40): warning C4244:         ]
+  BarrelHandler.cpp
+  BarrelMovement.cpp
+  Border.cpp
+  Collider.cpp
+  DonkeyKong.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\DonkeyKong.cpp(19,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\DonkeyKong.cpp(19,53): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\DonkeyKong.cpp(19,53): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\DonkeyKong.cpp(19,53): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\DonkeyKong.cpp(19,53): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\DonkeyKong.cpp(19,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\DonkeyKong.cpp(19,34): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\DonkeyKong.cpp(19,34): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\DonkeyKong.cpp(19,34): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\DonkeyKong.cpp(19,34): warning C4244:         ]
+  DonkeyKongMovement.cpp
+  EmptyGameObject.cpp
+  Fire.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Fire.cpp(24,59): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Fire.cpp(24,59): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Fire.cpp(24,59): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Fire.cpp(24,59): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Fire.cpp(24,59): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Fire.cpp(24,40): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Fire.cpp(24,40): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Fire.cpp(24,40): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Fire.cpp(24,40): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Fire.cpp(24,40): warning C4244:         ]
+  FireMovement.cpp
+  Floor.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Floor.cpp(21,59): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Floor.cpp(21,59): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Floor.cpp(21,59): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Floor.cpp(21,59): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Floor.cpp(21,59): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Floor.cpp(21,40): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Floor.cpp(21,40): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Floor.cpp(21,40): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Floor.cpp(21,40): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Floor.cpp(21,40): warning C4244:         ]
+  FloorHandler.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\FloorHandler.cpp(39,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\FloorHandler.cpp(43,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\FloorHandler.cpp(62,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\FloorHandler.cpp(66,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\FloorHandler.cpp(85,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\FloorHandler.cpp(89,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  HammerHandler.cpp
+  LadderHandler.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(39,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(42,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(45,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(48,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(51,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(54,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(66,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(69,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(72,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(75,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(78,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(81,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(93,61): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(96,56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(99,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(102,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(105,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\LadderHandler.cpp(108,57): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Level2Scene.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Level2Scene.cpp(35,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Compiling...
+  Level3Scene.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Level3Scene.cpp(35,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  LevelManager.cpp
+  PaulineMovement.cpp
+  ResultsScene.cpp
+  ResultsScreen.cpp
+  SpawnManager.cpp
+  FontManager.cpp
+  GameObjectPool.cpp
+  GameScreen.cpp
+  Hammer.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Hammer.cpp(21,59): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Hammer.cpp(21,59): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Hammer.cpp(21,59): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Hammer.cpp(21,59): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Hammer.cpp(21,59): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Hammer.cpp(21,40): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Hammer.cpp(21,40): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Hammer.cpp(21,40): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Hammer.cpp(21,40): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Hammer.cpp(21,40): warning C4244:         ]
+  Ladder.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Ladder.cpp(24,59): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Ladder.cpp(24,59): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Ladder.cpp(24,59): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Ladder.cpp(24,59): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Ladder.cpp(24,59): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Ladder.cpp(24,40): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Ladder.cpp(24,40): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Ladder.cpp(24,40): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Ladder.cpp(24,40): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Ladder.cpp(24,40): warning C4244:         ]
+  Level1Scene.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Level1Scene.cpp(35,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  MainMenuScene.cpp
+  MainMenuScreen.cpp
+  ObjectPoolHolder.cpp
+  PhysicsManager.cpp
+  Player.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(26,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(26,53): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(26,53): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(26,53): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(26,53): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(26,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(26,34): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(26,34): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(26,34): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(26,34): warning C4244:         ]
+  BGObject.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(16,59): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(16,59): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(16,59): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(16,59): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(16,59): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(16,40): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(16,40): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(16,40): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(16,40): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(16,40): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(23,54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\BGObject.cpp(23,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Entity.cpp
+  Game.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Game.cpp(47,3): warning C4065: switch statement contains 'default' but no 'case' labels
+  Generating Code...
+  Compiling...
+  GameObjectManager.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\GameObjectManager.cpp(24,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  GenericInputController.cpp
+  Main.cpp
+  PlayerInputController.cpp
+  PlayerMovement.cpp
+  Renderer.cpp
+  SceneManager.cpp
+  SpriteRenderer.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\SpriteRenderer.cpp(9,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\SpriteRenderer.cpp(9,53): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\SpriteRenderer.cpp(9,53): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\SpriteRenderer.cpp(9,53): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\SpriteRenderer.cpp(9,53): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\SpriteRenderer.cpp(9,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\SpriteRenderer.cpp(9,34): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\SpriteRenderer.cpp(9,34): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\SpriteRenderer.cpp(9,34): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\SpriteRenderer.cpp(9,34): warning C4244:         ]
+  TextureManager.cpp
+  UIButton.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(18,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(18,53): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(18,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(18,34): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButton.cpp(53,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  UIButtonInputController.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButtonInputController.cpp(28,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButtonInputController.cpp(28,63): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButtonInputController.cpp(28,63): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButtonInputController.cpp(28,63): warning C4244:             T=float
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButtonInputController.cpp(28,63): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButtonInputController.cpp(28,42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButtonInputController.cpp(28,42): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButtonInputController.cpp(28,42): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButtonInputController.cpp(28,42): warning C4244:             T=float
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIButtonInputController.cpp(28,42): warning C4244:         ]
+  UIData.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIData.cpp(20,26): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\UIData.cpp(39,30): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  UIManager.cpp
+  UIText.cpp
+  Generating Code...
+  DonkeyKong.vcxproj -> D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\x64\Debug\DonkeyKong.exe

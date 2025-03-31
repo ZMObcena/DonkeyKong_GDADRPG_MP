@@ -70,7 +70,7 @@ void Player::onCollisionEnter(AGameObject* object)
 			LevelManager::getInstance()->setLives(this->lives);
 			this->lifeCheck(this->lives);
 			UIData* lifeData = UIManager::getInstance()->getUIData("LifeText");
-			lifeData->putInt(UIManager::SCORE_UI_KEY, lifeData->getInt(UIManager::LIFE_UI_KEY, LevelManager::getInstance()->getLives()) - 1);
+			lifeData->putInt(UIManager::LIFE_UI_KEY, lifeData->getInt(UIManager::LIFE_UI_KEY, LevelManager::getInstance()->getLives()) - 1);
 			lifeData->refreshTextFromData("LifeText", UIManager::LIFE_UI_KEY, "LIVES:");
 		}
 		else
@@ -99,7 +99,7 @@ void Player::onCollisionEnter(AGameObject* object)
 			this->score += 300;
 			LevelManager::getInstance()->setScore(this->score);
 			UIData* scoreData = UIManager::getInstance()->getUIData("ScoreText");
-			scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, LevelManager::getInstance()->getScore()) + 300);
+			scoreData->putInt(UIManager::LIFE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, LevelManager::getInstance()->getScore()) + 300);
 			scoreData->refreshTextFromData("ScoreText", UIManager::SCORE_UI_KEY, "");
 		}
 	}
