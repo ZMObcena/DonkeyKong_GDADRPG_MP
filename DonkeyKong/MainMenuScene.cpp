@@ -3,6 +3,7 @@
 #include <iostream>
 #include "TextureManager.h"
 #include "SceneManager.h"
+#include "SFXManager.h"
 
 MainMenuScene::MainMenuScene() : AScene("MainMenuScene") {}
 
@@ -13,6 +14,7 @@ void MainMenuScene::onLoadResources()
 
 void MainMenuScene::onLoadObjects() 
 {
+	SFXManager::getInstance()->playSound("background");
 	MainMenuScreen* menuScreen = new MainMenuScreen("MainMenuScreen");
 	this->registerObject(menuScreen);
 }

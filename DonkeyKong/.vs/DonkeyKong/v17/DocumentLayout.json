@@ -1,29 +1,109 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\",
+  "WorkspaceRootPath": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:LevelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:LevelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:ResultsScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:ResultsScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\FloorHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\SFXManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:SFXManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\MainMenuScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:MainMenuScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\PlayerInputController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:PlayerInputController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\PlayerMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:PlayerMovement.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\PlayerMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:PlayerMovement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:LevelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\TextureManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:TextureManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\TextureManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:TextureManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\SFXManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:SFXManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\EmptyGameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:EmptyGameObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\UIButtonInputController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:UIButtonInputController.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\SceneManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:SceneManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\MainMenuScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:MainMenuScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\GameObjectPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:GameObjectPool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\FontManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:FontManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Floor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Floor.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Fire.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Fire.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Barrel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:Barrel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\GameObjectManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:GameObjectManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:LevelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:ResultsScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\FloorHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E1CF1C68-41E6-442D-B4EB-3797E6E37FCB}|DonkeyKong.vcxproj|solutionrelative:FloorHandler.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -34,11 +114,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             },
             {
               "$type": "Bookmark",
@@ -49,78 +129,346 @@
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerInputController.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\PlayerInputController.cpp",
+              "RelativeDocumentMoniker": "PlayerInputController.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\PlayerInputController.cpp",
+              "RelativeToolTip": "PlayerInputController.cpp",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAYwBAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T05:12:38.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainMenuScene.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\MainMenuScene.cpp",
+              "RelativeDocumentMoniker": "MainMenuScene.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\MainMenuScene.cpp",
+              "RelativeToolTip": "MainMenuScene.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T05:03:28.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Game.h",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Game.h",
+              "RelativeDocumentMoniker": "Game.h",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Game.h",
+              "RelativeToolTip": "Game.h",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-02T04:50:29.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Game.cpp",
+              "RelativeDocumentMoniker": "Game.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Game.cpp",
+              "RelativeToolTip": "Game.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:45:26.236Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LevelManager.cpp",
-              "DocumentMoniker": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.cpp",
-              "RelativeDocumentMoniker": "LevelManager.cpp",
-              "ToolTip": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.cpp",
-              "RelativeToolTip": "LevelManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBsAAAAAAAAAAAAAAA==",
+              "Title": "SFXManager.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\SFXManager.cpp",
+              "RelativeDocumentMoniker": "SFXManager.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\SFXManager.cpp",
+              "RelativeToolTip": "SFXManager.cpp",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-31T05:55:46.085Z",
+              "WhenOpened": "2025-04-02T03:48:33.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ResultsScreen.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScreen.cpp",
+              "RelativeDocumentMoniker": "ResultsScreen.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScreen.cpp",
+              "RelativeToolTip": "ResultsScreen.cpp",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-31T05:49:43.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerMovement.h",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\PlayerMovement.h",
+              "RelativeDocumentMoniker": "PlayerMovement.h",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\PlayerMovement.h",
+              "RelativeToolTip": "PlayerMovement.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-02T05:07:18.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FloorHandler.cpp",
-              "DocumentMoniker": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\FloorHandler.cpp",
-              "RelativeDocumentMoniker": "FloorHandler.cpp",
-              "ToolTip": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\FloorHandler.cpp",
-              "RelativeToolTip": "FloorHandler.cpp",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "Title": "PlayerMovement.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\PlayerMovement.cpp",
+              "RelativeDocumentMoniker": "PlayerMovement.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\PlayerMovement.cpp",
+              "RelativeToolTip": "PlayerMovement.cpp",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-30T17:21:03.064Z"
+              "WhenOpened": "2025-04-02T05:07:23.185Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Player.cpp",
-              "DocumentMoniker": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Player.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Player.cpp",
               "RelativeDocumentMoniker": "Player.cpp",
-              "ToolTip": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Player.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Player.cpp",
               "RelativeToolTip": "Player.cpp",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAGUAAAAkAAAAAAAAAA==",
+              "ViewState": "AQIAADEAAAAAAAAAAAAYwEUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-31T05:55:27.795Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LevelManager.h",
-              "DocumentMoniker": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.h",
-              "RelativeDocumentMoniker": "LevelManager.h",
-              "ToolTip": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.h",
-              "RelativeToolTip": "LevelManager.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "LevelManager.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.cpp",
+              "RelativeDocumentMoniker": "LevelManager.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.cpp",
+              "RelativeToolTip": "LevelManager.cpp",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADsAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-31T05:55:46.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TextureManager.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\TextureManager.cpp",
+              "RelativeDocumentMoniker": "TextureManager.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\TextureManager.cpp",
+              "RelativeToolTip": "TextureManager.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:10:01.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TextureManager.h",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\TextureManager.h",
+              "RelativeDocumentMoniker": "TextureManager.h",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\TextureManager.h",
+              "RelativeToolTip": "TextureManager.h",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-31T06:32:44.993Z"
+              "WhenOpened": "2025-04-02T04:37:02.343Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
+              "Title": "SFXManager.h",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\SFXManager.h",
+              "RelativeDocumentMoniker": "SFXManager.h",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\SFXManager.h",
+              "RelativeToolTip": "SFXManager.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-02T03:48:58.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmptyGameObject.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\EmptyGameObject.cpp",
+              "RelativeDocumentMoniker": "EmptyGameObject.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\EmptyGameObject.cpp",
+              "RelativeToolTip": "EmptyGameObject.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:12:53.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UIButtonInputController.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\UIButtonInputController.cpp",
+              "RelativeDocumentMoniker": "UIButtonInputController.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\UIButtonInputController.cpp",
+              "RelativeToolTip": "UIButtonInputController.cpp",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAABYAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:10:07.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SceneManager.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\SceneManager.cpp",
+              "RelativeDocumentMoniker": "SceneManager.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\SceneManager.cpp",
+              "RelativeToolTip": "SceneManager.cpp",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAAA0AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:10:00.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MainMenuScreen.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\MainMenuScreen.cpp",
+              "RelativeDocumentMoniker": "MainMenuScreen.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\MainMenuScreen.cpp",
+              "RelativeToolTip": "MainMenuScreen.cpp",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAADMAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:09:59.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GameObjectPool.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\GameObjectPool.cpp",
+              "RelativeDocumentMoniker": "GameObjectPool.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\GameObjectPool.cpp",
+              "RelativeToolTip": "GameObjectPool.cpp",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAAAC8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:09:57.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FontManager.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\FontManager.cpp",
+              "RelativeDocumentMoniker": "FontManager.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\FontManager.cpp",
+              "RelativeToolTip": "FontManager.cpp",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAB4AAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:09:55.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Floor.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Floor.cpp",
+              "RelativeDocumentMoniker": "Floor.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Floor.cpp",
+              "RelativeToolTip": "Floor.cpp",
+              "ViewState": "AQIAABsAAAAAAAAAAAAIwCoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:09:52.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Fire.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Fire.cpp",
+              "RelativeDocumentMoniker": "Fire.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Fire.cpp",
+              "RelativeToolTip": "Fire.cpp",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAAAGgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:09:51.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Barrel.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Barrel.cpp",
+              "RelativeDocumentMoniker": "Barrel.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\Barrel.cpp",
+              "RelativeToolTip": "Barrel.cpp",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAAAGYAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T04:09:50.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GameObjectManager.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\GameObjectManager.cpp",
+              "RelativeDocumentMoniker": "GameObjectManager.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\GameObjectManager.cpp",
+              "RelativeToolTip": "GameObjectManager.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-02T03:47:56.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FloorHandler.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\FloorHandler.cpp",
+              "RelativeDocumentMoniker": "FloorHandler.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\FloorHandler.cpp",
+              "RelativeToolTip": "FloorHandler.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-30T17:21:03.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LevelManager.h",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.h",
+              "RelativeDocumentMoniker": "LevelManager.h",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\LevelManager.h",
+              "RelativeToolTip": "LevelManager.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-31T06:32:44.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "ResultsScene.cpp",
-              "DocumentMoniker": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScene.cpp",
+              "DocumentMoniker": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScene.cpp",
               "RelativeDocumentMoniker": "ResultsScene.cpp",
-              "ToolTip": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScene.cpp",
+              "ToolTip": "C:\\Users\\kassi\\OneDrive\\Documents\\GitHub\\adprg\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScene.cpp",
               "RelativeToolTip": "ResultsScene.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAQwDEAAABXAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-31T05:52:48.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ResultsScreen.cpp",
-              "DocumentMoniker": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScreen.cpp",
-              "RelativeDocumentMoniker": "ResultsScreen.cpp",
-              "ToolTip": "D:\\AAASchool\\4th Year\\Term 2\\GDADPRG\\DonkeyKong_GDADRPG_MP\\DonkeyKong\\ResultsScreen.cpp",
-              "RelativeToolTip": "ResultsScreen.cpp",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAQwF4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-31T05:49:43.016Z"
+              "WhenOpened": "2025-03-31T05:52:48.842Z",
+              "EditorCaption": ""
             }
           ]
         },

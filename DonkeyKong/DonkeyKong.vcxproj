@@ -160,6 +160,7 @@
     <ClCompile Include="PaulineMovement.cpp" />
     <ClCompile Include="ResultsScene.cpp" />
     <ClCompile Include="ResultsScreen.cpp" />
+    <ClCompile Include="SFXManager.cpp" />
     <ClCompile Include="SpawnManager.cpp" />
     <ClCompile Include="FontManager.cpp" />
     <ClCompile Include="GameObjectPool.cpp" />
@@ -218,6 +219,7 @@
     <ClInclude Include="PaulineMovement.h" />
     <ClInclude Include="ResultsScene.h" />
     <ClInclude Include="ResultsScreen.h" />
+    <ClInclude Include="SFXManager.h" />
     <ClInclude Include="SpawnManager.h" />
     <ClInclude Include="FontManager.h" />
     <ClInclude Include="GameObjectPool.h" />

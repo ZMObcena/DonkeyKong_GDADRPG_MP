@@ -7,6 +7,7 @@
 #include "SpawnManager.h"
 #include "UIData.h"
 #include "UIManager.h"
+#include "SFXManager.h"
 
 Player::Player(std::string name) : AGameObject(name), CollisionListener()
 {
@@ -66,6 +67,8 @@ void Player::onCollisionEnter(AGameObject* object)
 	{
 		if (!isUsingHammer())
 		{
+			SFXManager::getInstance()->playSound("death");
+
 			this->lives--;
 			LevelManager::getInstance()->setLives(this->lives);
 			this->lifeCheck(this->lives);
@@ -87,6 +90,8 @@ void Player::onCollisionEnter(AGameObject* object)
 	{
 		if (!isUsingHammer())
 		{
+			SFXManager::getInstance()->playSound("death");
+
 			this->lives--;
 			LevelManager::getInstance()->setLives(this->lives);
 			this->lifeCheck(this->lives);
@@ -111,6 +116,8 @@ void Player::onCollisionEnter(AGameObject* object)
 
 	if (object->getName() == "Border")
 	{
+		SFXManager::getInstance()->playSound("death");
+
 		this->lives--;
 		LevelManager::getInstance()->setLives(this->lives);
 		this->isHammer = false;
@@ -122,6 +129,7 @@ void Player::onCollisionEnter(AGameObject* object)
 
 	if (object->getName() == "Pauline")
 	{
+		SFXManager::getInstance()->playSound("win1");
 		LevelManager::getInstance()->increaseLevel();
 	}
 
