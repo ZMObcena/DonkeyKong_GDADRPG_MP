@@ -1,5 +1,6 @@
 #include "LevelManager.h"
 #include "SceneManager.h"
+#include "SFXManager.h"
 
 LevelManager* LevelManager::sharedInstance = nullptr;
 
@@ -20,6 +21,7 @@ void LevelManager::checkLevel()
 {
 	if (this->level > 3)
 	{
+		SFXManager::getInstance()->playSound("win2");
 		SceneManager::getInstance()->loadScene(SceneManager::RESULTS_SCENE);
 	}
 	else

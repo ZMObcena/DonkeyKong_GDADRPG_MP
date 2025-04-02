@@ -1,5 +1,6 @@
 #include "PlayerInputController.h"
 #include "SceneManager.h"
+#include "SFXManager.h"
 
 PlayerInputController::PlayerInputController(std::string name) : GenericInputController(name)
 {
@@ -40,18 +41,22 @@ void PlayerInputController::processKeyInput(bool pressed)
 
     case sf::Keyboard::W:
         this->moveUp = pressed;
+        SFXManager::getInstance()->playSound("walking2");
         break;
 
     case sf::Keyboard::S:
         this->moveDown = pressed;
+        SFXManager::getInstance()->playSound("walking2");
         break;
 
     case sf::Keyboard::A:
         this->moveLeft = pressed;
+        SFXManager::getInstance()->playSound("walking2");
         break;
 
     case sf::Keyboard::D:
         this->moveRight = pressed;
+        SFXManager::getInstance()->playSound("walking2");
         break;
 
     // FOR TESTING ONLY

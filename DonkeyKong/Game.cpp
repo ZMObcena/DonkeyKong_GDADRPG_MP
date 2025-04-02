@@ -5,6 +5,7 @@ Game::Game() : mWindow(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Donkey Kong"
 	mWindow.setFramerateLimit(60);
 
 	FontManager::getInstance()->loadAll();
+	SFXManager::getInstance()->loadAll();
 	SceneManager::getInstance()->registerScene(new MainMenuScene());
 	SceneManager::getInstance()->registerScene(new ResultsScene());
 	SceneManager::getInstance()->registerScene(new Level1Scene());

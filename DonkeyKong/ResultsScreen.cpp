@@ -9,6 +9,7 @@
 #include "UIButton.h"
 #include "UIText.h"
 #include "LevelManager.h"
+#include "SFXManager.h"
 
 ResultsScreen::ResultsScreen(std::string name) : AGameObject(name), ButtonListener()
 {
@@ -45,6 +46,7 @@ void ResultsScreen::initialize()
 
 	if (level > 3)
 	{
+		SFXManager::getInstance()->playSound("winner");
 		UIText* prompt = new UIText("Prompt");
 		this->attachChild(prompt);
 		prompt->setPosition(1920 / 2, 700);

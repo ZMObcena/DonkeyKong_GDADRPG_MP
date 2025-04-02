@@ -8,6 +8,7 @@
 #include "ApplicationManager.h"
 #include "FontManager.h"
 #include "PhysicsManager.h"
+#include "SFXManager.h"
 
 #include "MainMenuScene.h"
 #include "ResultsScene.h"
