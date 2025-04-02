@@ -79,6 +79,7 @@ void Player::onCollisionEnter(AGameObject* object)
 		else
 		{
 			this->score += 100;
+			SFXManager::getInstance()->playSound("point");
 			LevelManager::getInstance()->setScore(this->score);
 			UIData* scoreData = UIManager::getInstance()->getUIData("ScoreText");
 			scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, LevelManager::getInstance()->getScore()) + 100);
@@ -102,6 +103,7 @@ void Player::onCollisionEnter(AGameObject* object)
 		else
 		{
 			this->score += 300;
+			SFXManager::getInstance()->playSound("point");
 			LevelManager::getInstance()->setScore(this->score);
 			UIData* scoreData = UIManager::getInstance()->getUIData("ScoreText");
 			scoreData->putInt(UIManager::LIFE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, LevelManager::getInstance()->getScore()) + 300);
@@ -111,6 +113,7 @@ void Player::onCollisionEnter(AGameObject* object)
 	
 	if (object->getName() == "Hammer")
 	{
+		SFXManager::getInstance()->playSound("item");
 		this->isHammer = true;
 	}
 

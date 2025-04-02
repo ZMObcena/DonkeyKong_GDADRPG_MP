@@ -57,22 +57,16 @@ void LadderHandler::perform()
 
 	else if (level == 2 && proceed)
 	{
-		SpawnManager::getInstance()->setLadderSpawn(580, 873);
+		SpawnManager::getInstance()->setLadderSpawn(1282, 873);
 		this->pool->requestPoolable();
 
-		SpawnManager::getInstance()->setLadderSpawn(1240, 873);
+		SpawnManager::getInstance()->setLadderSpawn(1920 / 2 - 40, 863 - offset);
 		this->pool->requestPoolable();
 
-		SpawnManager::getInstance()->setLadderSpawn(1920 / 2, 863 - offset);
+		SpawnManager::getInstance()->setLadderSpawn(340, 853 - offset * 2);
 		this->pool->requestPoolable();
 
-		SpawnManager::getInstance()->setLadderSpawn(580, 853 - offset * 2);
-		this->pool->requestPoolable();
-
-		SpawnManager::getInstance()->setLadderSpawn(1240, 853 - offset * 2);
-		this->pool->requestPoolable();
-
-		SpawnManager::getInstance()->setLadderSpawn(1360, 843 - offset * 3);
+		SpawnManager::getInstance()->setLadderSpawn(1400, 843 - offset * 3);
 		this->pool->requestPoolable();
 
 		SpawnManager::getInstance()->setLadderSpawn(1140, 843 - offset * 4);

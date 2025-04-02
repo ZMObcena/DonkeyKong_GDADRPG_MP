@@ -22,6 +22,8 @@
 #include "LevelManager.h"
 #include "UIData.h"
 #include "UIManager.h"
+#include "SFXManager.h"
+
 
 Level2Scene::Level2Scene() : AScene("Level2Scene") {}
 
@@ -117,6 +119,9 @@ void Level2Scene::onLoadObjects()
 	DonkeyKong* dk = new DonkeyKong("DonkeyKong");
 	this->registerObject(dk);
 	dk->getTransformable()->setPosition(630, 215);
+
+	SFXManager::getInstance()->stopPlaying("results");
+	SFXManager::getInstance()->playSound("background");
 }
 
 void Level2Scene::onUnloadResources()

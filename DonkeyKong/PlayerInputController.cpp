@@ -37,6 +37,7 @@ void PlayerInputController::processKeyInput(bool pressed)
 
     case sf::Keyboard::Space:
         this->jump = pressed;
+        SFXManager::getInstance()->playSound("jump");
         break;
 
     case sf::Keyboard::W:

@@ -41,13 +41,7 @@ void HammerHandler::perform()
 
 	else if (level == 2 && proceed)
 	{
-		SpawnManager::getInstance()->setHammerSpawn(450, 530);
-		this->pool->requestPoolable();
-
-		SpawnManager::getInstance()->setHammerSpawn(1400, 700);
-		this->pool->requestPoolable();
-
-		SpawnManager::getInstance()->setHammerSpawn(1920 / 2, 350);
+		SpawnManager::getInstance()->setHammerSpawn(1920 / 2 - 40, 350);
 		this->pool->requestPoolable();
 	}
 

@@ -8,6 +8,7 @@
 #include <string>
 #include "UIButton.h"
 #include "LevelManager.h"
+#include "SFXManager.h"
 
 MainMenuScreen::MainMenuScreen(std::string name) : AGameObject(name), ButtonListener()
 {
@@ -25,7 +26,6 @@ void MainMenuScreen::initialize()
 	this->startButton->setPosition(1920 / 2, 800);
 	this->startButton->getTransformable()->setScale(1.5f, 1.5f);
 	this->startButton->setButtonListener(this);
-	//this->startButton->getSprite()->setScale(4.0f, 4.0);
 
 	normal = TextureManager::getInstance()->getTexture("Exit_normal");
 	pressed = TextureManager::getInstance()->getTexture("Exit_pressed");
@@ -35,7 +35,6 @@ void MainMenuScreen::initialize()
 	this->exitButton->setPosition(1920 / 2, 950);
 	this->exitButton->getTransformable()->setScale(1.5f, 1.5f);
 	this->exitButton->setButtonListener(this);
-	//this->startButton->getSprite()->setScale(4.0f, 4.0);
 
 	normal = TextureManager::getInstance()->getTexture("Title");
 	pressed = TextureManager::getInstance()->getTexture("Title");
@@ -61,11 +60,11 @@ void MainMenuScreen::onButtonReleased(UIButton* button)
 	
 	if (button == this->startButton)
 	{
+		SFXManager::getInstance()->playSound("press");
 		SceneManager::getInstance()->loadScene(SceneManager::LEVEL_1_SCENE);
 		LevelManager::getInstance()->proceedToNextLevel(true);
 		LevelManager::getInstance()->setLives(3);
 		LevelManager::getInstance()->setScore(0);
 		LevelManager::getInstance()->setLevel(1);
-
 	}
 }

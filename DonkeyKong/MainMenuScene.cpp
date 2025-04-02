@@ -14,7 +14,10 @@ void MainMenuScene::onLoadResources()
 
 void MainMenuScene::onLoadObjects() 
 {
-	SFXManager::getInstance()->playSound("background");
+	SFXManager::getInstance()->stopPlaying("background");
+	SFXManager::getInstance()->stopPlaying("results");
+	SFXManager::getInstance()->stopPlaying("winner");
+	SFXManager::getInstance()->playSound("intro");
 	MainMenuScreen* menuScreen = new MainMenuScreen("MainMenuScreen");
 	this->registerObject(menuScreen);
 }

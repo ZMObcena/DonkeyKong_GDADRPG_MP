@@ -27,7 +27,6 @@ void ResultsScreen::initialize()
 	this->startButton->setPosition(1920 / 2 - 180, 880);
 	this->startButton->getTransformable()->setScale(1.5f, 1.5f);
 	this->startButton->setButtonListener(this);
-	//this->startButton->getSprite()->setScale(4.0f, 4.0);
 
 	normal = TextureManager::getInstance()->getTexture("Exit_normal");
 	pressed = TextureManager::getInstance()->getTexture("Exit_pressed");
@@ -37,16 +36,19 @@ void ResultsScreen::initialize()
 	this->exitButton->setPosition(1920 / 2 + 180, 880);
 	this->exitButton->getTransformable()->setScale(1.5f, 1.5f);
 	this->exitButton->setButtonListener(this);
-	//this->startButton->getSprite()->setScale(4.0f, 4.0);
 
 	normal = TextureManager::getInstance()->getTexture("Title");
 	pressed = TextureManager::getInstance()->getTexture("Title");
 	int level = LevelManager::getInstance()->getLevel();
 	int lives = LevelManager::getInstance()->getLives();
 
+	SFXManager::getInstance()->stopPlaying("background");	
+	SFXManager::getInstance()->stopPlaying("death");
+	SFXManager::getInstance()->stopPlaying("win1");
+
 	if (level > 3)
 	{
-		SFXManager::getInstance()->playSound("winner");
+		SFXManager::getInstance()->playSound("clear");
 		UIText* prompt = new UIText("Prompt");
 		this->attachChild(prompt);
 		prompt->setPosition(1920 / 2, 700);
@@ -55,6 +57,7 @@ void ResultsScreen::initialize()
 	}
 	if (level < 3 && lives > 0)
 	{
+		SFXManager::getInstance()->playSound("results");
 		UIText* prompt = new UIText("Prompt");
 		this->attachChild(prompt);
 		prompt->setPosition(1920 / 2, 700);
@@ -64,13 +67,13 @@ void ResultsScreen::initialize()
 
 	if (lives < 0)
 	{
+		SFXManager::getInstance()->playSound("results");
 		UIText* prompt = new UIText("Prompt");
 		this->attachChild(prompt);
 		prompt->setPosition(1920 / 2, 700);
 		prompt->setSize(80);
 		prompt->setText("GAME OVER");
 	}
-
 }
 
 void ResultsScreen::onButtonClick(UIButton* button)
@@ -87,6 +90,7 @@ void ResultsScreen::onButtonReleased(UIButton* button)
 
 	if (button == this->startButton)
 	{
+		SFXManager::getInstance()->playSound("press");
 		int level = LevelManager::getInstance()->getLevel();
 		int lives = LevelManager::getInstance()->getLives();
 
