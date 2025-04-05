@@ -47,6 +47,10 @@ void SFXManager::playSound(const std::string& key)
     sounds[bg].setVolume(40);
     std::string wk = "walking2";
     sounds[wk].setVolume(40);
+    std::string jm = "jump";
+    sounds[jm].setVolume(5);
+    std::string dt = "death";
+    sounds[dt].setVolume(40);
 
     if (sounds.find(key) != sounds.end()) 
     {
@@ -68,6 +72,15 @@ void SFXManager::stopPlaying(const std::string& key)
     {
         std::cout << "Sound not found: " << key << std::endl;
     }
+}
+
+bool SFXManager::isPlaying(const std::string& key)
+{
+    if (sounds.find(key) != sounds.end())
+    {
+        return sounds[key].getStatus() == sf::Sound::Playing;
+    }
+    return false;
 }
 
 SFXManager::~SFXManager() {
