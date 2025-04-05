@@ -78,6 +78,8 @@ void Player::onCollisionEnter(AGameObject* object)
 		}
 		else
 		{
+			SFXManager::getInstance()->playSound("death1");
+
 			this->score += 100;
 			SFXManager::getInstance()->playSound("point");
 			LevelManager::getInstance()->setScore(this->score);
@@ -96,17 +98,19 @@ void Player::onCollisionEnter(AGameObject* object)
 			this->lives--;
 			LevelManager::getInstance()->setLives(this->lives);
 			this->lifeCheck(this->lives);
-			UIData* scoreData = UIManager::getInstance()->getUIData("LifeText");
-			scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::LIFE_UI_KEY, LevelManager::getInstance()->getLives()) - 1);
-			scoreData->refreshTextFromData("LifeText", UIManager::LIFE_UI_KEY, "LIVES:");
+			UIData* lifeData = UIManager::getInstance()->getUIData("LifeText");
+			lifeData->putInt(UIManager::LIFE_UI_KEY, lifeData->getInt(UIManager::LIFE_UI_KEY, LevelManager::getInstance()->getLives()) - 1);
+			lifeData->refreshTextFromData("LifeText", UIManager::LIFE_UI_KEY, "LIVES:");
 		}
 		else
 		{
-			this->score += 300;
+			SFXManager::getInstance()->playSound("death1");
+
+			this->score += 100;
 			SFXManager::getInstance()->playSound("point");
 			LevelManager::getInstance()->setScore(this->score);
 			UIData* scoreData = UIManager::getInstance()->getUIData("ScoreText");
-			scoreData->putInt(UIManager::LIFE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, LevelManager::getInstance()->getScore()) + 300);
+			scoreData->putInt(UIManager::SCORE_UI_KEY, scoreData->getInt(UIManager::SCORE_UI_KEY, LevelManager::getInstance()->getScore()) + 300);
 			scoreData->refreshTextFromData("ScoreText", UIManager::SCORE_UI_KEY, "");
 		}
 	}

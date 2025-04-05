@@ -14,6 +14,7 @@
 #include "BarrelHandler.h"
 #include "LadderHandler.h"
 #include "HammerHandler.h"
+#include "FireHandler.h"
 #include "GameScreen.h"
 #include "Hammer.h"
 #include "Border.h"
@@ -44,6 +45,11 @@ void Level3Scene::onLoadObjects()
 	BarrelHandler* barrelHandler = new BarrelHandler(100, "BarrelHandler", barrelManager);
 	barrelManager->attachComponent(barrelHandler);
 	this->registerObject(barrelManager);
+
+	EmptyGameObject* fireManager = new EmptyGameObject("Fire Manager");
+	FireHandler* fireHandler = new FireHandler(20, "FireHandler", fireManager);
+	fireManager->attachComponent(fireHandler);
+	this->registerObject(fireManager);
 
 	EmptyGameObject* ladderManager = new EmptyGameObject("Ladder Manager");
 	LadderHandler* ladderHandler = new LadderHandler(100, "LadderHandler", ladderManager);

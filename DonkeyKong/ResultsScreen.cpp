@@ -55,7 +55,7 @@ void ResultsScreen::initialize()
 		prompt->setSize(80);
 		prompt->setText("YOU WIN!");
 	}
-	if (level < 3 && lives > 0)
+	if (level <= 3 && lives > 0)
 	{
 		SFXManager::getInstance()->playSound("results");
 		UIText* prompt = new UIText("Prompt");

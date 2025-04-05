@@ -27,6 +27,6 @@ private:
 	Collider* collider;
 	bool onLadder;
 	bool onFloor;
-	const float fireSpeed = 20.0f;
+	const float fireSpeed = 50.0f;
 };
 

@@ -122,6 +122,7 @@ void Level1Scene::onLoadObjects()
 
 	SFXManager::getInstance()->stopPlaying("results");
 	SFXManager::getInstance()->stopPlaying("intro");
+	SFXManager::getInstance()->stopPlaying("clear");
 	SFXManager::getInstance()->playSound("background");
 }
 

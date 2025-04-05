@@ -26,6 +26,7 @@ void SFXManager::loadAll()
     loadSound("point", "Media/Sounds/point.wav");
     loadSound("press", "Media/Sounds/press.wav");
     loadSound("clear", "Media/Sounds/clear.wav");
+    loadSound("death1", "Media/Sounds/enemy_death.wav");
 }
 
 void SFXManager::loadSound(const std::string& key, const std::string& filename) 

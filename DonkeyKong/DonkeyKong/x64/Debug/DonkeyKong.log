@@ -1,2 +1,12 @@
-﻿  SFXManager.cpp
-  DonkeyKong.vcxproj -> C:\Users\kassi\OneDrive\Documents\GitHub\adprg\DonkeyKong_GDADRPG_MP\DonkeyKong\x64\Debug\DonkeyKong.exe
+﻿  Player.cpp
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(27,53): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(27,53): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(27,53): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(27,53): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(27,53): warning C4244:         ]
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(27,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(27,34): warning C4244:         with
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(27,34): warning C4244:         [
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(27,34): warning C4244:             T=unsigned int
+D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\Player.cpp(27,34): warning C4244:         ]
+  DonkeyKong.vcxproj -> D:\AAASchool\4th Year\Term 2\GDADPRG\DonkeyKong_GDADRPG_MP\DonkeyKong\x64\Debug\DonkeyKong.exe

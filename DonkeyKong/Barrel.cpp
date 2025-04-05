@@ -5,6 +5,7 @@
 #include "DonkeyKong.h"
 #include "ObjectPoolHolder.h"
 #include "SpawnManager.h"
+#include "LevelManager.h"
 
 Barrel::Barrel(std::string name) : APoolable(name), CollisionListener()
 {
@@ -52,6 +53,14 @@ void Barrel::onRelease()
 
 void Barrel::onActivate()
 {
+	if (LevelManager::getInstance()->getLevel() == 3)
+	{
+		this->sprite->setColor(sf::Color(50,90,255));
+	}
+	else
+	{
+		this->sprite->setColor(sf::Color::White); // default color
+	}
 	sf::Vector2f spawn = SpawnManager::getInstance()->getBarrelSpawn();
 	this->setPosition(spawn.x, spawn.y);
 	this->onFloor = true;

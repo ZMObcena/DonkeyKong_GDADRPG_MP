@@ -31,6 +31,7 @@ void Floor::initialize()
 	collider->setOffset(this->sprite->getGlobalBounds());
 	collider->assignListener(this);
 	this->attachComponent(collider);
+
 }
 
 void Floor::setSpawnPosition(float x, float y)
@@ -46,6 +47,14 @@ void Floor::onRelease()
 
 void Floor::onActivate()
 {
+	if (LevelManager::getInstance()->getLevel() == 3)
+	{
+		this->sprite->setColor(sf::Color::Blue);
+	}
+	else
+	{
+		this->sprite->setColor(sf::Color::White); // default color
+	}
 	sf::Vector2f spawn = SpawnManager::getInstance()->getFloorSpawn();
 	this->setPosition(spawn.x, spawn.y);
 

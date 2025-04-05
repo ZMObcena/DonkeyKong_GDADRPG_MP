@@ -55,6 +55,14 @@ void Fire::onActivate()
 	sf::Vector2f spawn = SpawnManager::getInstance()->getFireSpawn();
 	this->setPosition(spawn.x, spawn.y);
 	PhysicsManager::getInstance()->trackObject(this->collider);
+	this->onFloor = true;
+
+	FireMovement* movement = (FireMovement*)this->findComponentByName(this->name + " Movement");
+	if (movement)
+	{
+		movement->reset();
+	}
+
 }
 
 APoolable* Fire::clone()
@@ -86,8 +94,6 @@ void Fire::onCollisionEnter(AGameObject* object)
 	{
 		this->onLadder = true;
 	}
-
-	std::cout << this->name + " entered " + object->getName() << std::endl;
 }
 
 void Fire::onCollisionExit(AGameObject* object)
@@ -101,8 +107,6 @@ void Fire::onCollisionExit(AGameObject* object)
 	{
 		this->onLadder = false;
 	}
-
-	std::cout << this->name + " exited " + object->getName() << std::endl;
 }
 
 bool Fire::isOnFloor() { return this->onFloor; }
