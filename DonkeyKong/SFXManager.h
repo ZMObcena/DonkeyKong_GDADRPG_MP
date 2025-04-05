@@ -16,8 +16,10 @@ public:
     static SFXManager* getInstance();
     void loadAll();
     void loadSound(const std::string& key, const std::string& filename);
-    void stopPlaying(const std::string& filename);
     void playSound(const std::string& key);
+
+    void stopPlaying(const std::string& key);
+    bool isPlaying(const std::string& key);
 
     ~SFXManager();
 };

@@ -33,6 +33,8 @@ void PlayerInputController::processKeyInput(bool pressed)
 {
     sf::Keyboard::Key key = this->event.key.code;
 
+    bool wasWalking = moveUp || moveDown || moveLeft || moveRight;
+
     switch (key) {
 
     case sf::Keyboard::Space:
@@ -42,22 +44,18 @@ void PlayerInputController::processKeyInput(bool pressed)
 
     case sf::Keyboard::W:
         this->moveUp = pressed;
-        SFXManager::getInstance()->playSound("walking2");
         break;
 
     case sf::Keyboard::S:
         this->moveDown = pressed;
-        SFXManager::getInstance()->playSound("walking2");
         break;
 
     case sf::Keyboard::A:
         this->moveLeft = pressed;
-        SFXManager::getInstance()->playSound("walking2");
         break;
 
     case sf::Keyboard::D:
         this->moveRight = pressed;
-        SFXManager::getInstance()->playSound("walking2");
         break;
 
     // FOR TESTING ONLY
@@ -82,6 +80,18 @@ void PlayerInputController::processKeyInput(bool pressed)
         break;
     default:
         break;
+    }
+
+    bool isWalking = moveUp || moveDown || moveLeft || moveRight;
+    SFXManager* sfx = SFXManager::getInstance();
+
+    if (isWalking && !sfx->isPlaying("walking2"))
+    {
+        sfx->playSound("walking2");
+    }
+    else if (!isWalking && wasWalking)
+    {
+        sfx->stopPlaying("walking2");
     }
 }
 
